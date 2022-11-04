@@ -1,0 +1,23 @@
+.option-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.tab-image-container.absolute-center {
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    border-radius: 50%;
+}
+
+p.tab-icon{
+    font-size: 35px;
+}
+.active-tab .tab-name{
+    color: rgb(189, 43, 43);
+    border-bottom: 2px solid rgb(189, 43, 43);
+}
+.tab-option{
+    margin-top: 35px;
+}

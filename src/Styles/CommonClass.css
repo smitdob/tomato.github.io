@@ -1,0 +1,25 @@
+body {
+    overflow-x: hidden;
+  }
+.absolute-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cur-po{
+    cursor: pointer;
+}
+.tab-item {
+    margin-right: 24px;
+    padding-bottom: 5px;
+}
+.collection-title {
+    font-size: 30px;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.slick-prev:before, .slick-next:before {
+    color: grey !important;
+}

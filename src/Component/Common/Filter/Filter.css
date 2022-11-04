@@ -1,0 +1,16 @@
+.filter {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.filter>div {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 2px 7px;
+    border-radius: 10px;
+    
+}
+.filter>div>i{
+    padding-left: 5px;
+}

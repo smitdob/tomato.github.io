@@ -1,0 +1,28 @@
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-top-right-wrapper {
+    display: flex;
+    align-items: center;
+}
+.region {
+    margin-right: 25px;
+}
+i.fa-solid.fa-caret-down{
+    padding-left: 3px;
+}
+i.fa-solid.fa-globe{
+    padding-right: 3px;
+}
+.region, .language {
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.6rem;
+    padding: 6px 13px;
+}
+.footer-logo {
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}

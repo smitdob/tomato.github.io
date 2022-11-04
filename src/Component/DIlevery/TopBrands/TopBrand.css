@@ -1,0 +1,19 @@
+.top-brand-cover {
+    height: 125px;
+    width: 125px;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 12px;
+    border: 0.5px solid white;
+    margin: 0 auto;
+}
+.top-brand-image{
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.top-brand-time {
+    text-align: center;
+    width: 125px;
+}
