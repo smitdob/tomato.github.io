@@ -6,7 +6,7 @@ const TopFooter = () => {
         <>
             <div className="top-footer">
                 <img src={imgLink} alt="Zomato Logo" className='footer-logo'/>
-                <div className="footer-top-right-wrapper">
+                {/* <div className="footer-top-right-wrapper">
                     <div className="region">
                         india 
                         <i className="fa-solid fa-caret-down"></i>
@@ -16,7 +16,7 @@ const TopFooter = () => {
                         English
                         <i className="fa-solid fa-caret-down"></i>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

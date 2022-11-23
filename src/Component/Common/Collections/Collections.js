@@ -9,12 +9,76 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 1,
   nextArrow: <NextArrow/>,
-  prevArrow:  <PreArrow/>
+  prevArrow:  <PreArrow/>,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        initialSlide: 2,
+        nextArrow: false,
+        prevArrow: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        initialSlide: 2,
+        nextArrow: false,
+        prevArrow: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: false,
+        prevArrow: false,
+        dots: false
+      }
+    }
+  ]
 };
 const Collections = ({list}) => {
   return (
     <>
-    <div className="collection-wrapper">
+    <div className="collection-wrapper container-md">
         <div className='collection'>   
             <div className="collection-title">Collection</div>
             <div className="collection-subtitle-row">

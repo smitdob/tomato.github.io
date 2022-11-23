@@ -19,3 +19,54 @@
     overflow: hidden;
     text-align: center;
 }
+
+
+@media only screen and (min-width: 300px) and (max-width:435px){
+}
+@media only screen and (min-width: 435px) and (max-width:576px){
+}
+@media only screen and (max-width: 576px){  
+    .dilevery-item-cover {
+        height: 85px;
+        width: 85px;
+    }
+    .dilevery-item-title {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+    .dilevery-item-cover {
+        height: 104px;
+        width: 140px;
+    }
+    .dilevery-item-title {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .dilevery-item-cover {
+        height: 130px;
+        width: 150px;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 8%) 0px 3px 12px;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+    .dilevery-item-title {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 992px){
+ 
+}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 769px){
+}
+@media only screen and (min-width: 993px){}
+@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 1401px){}

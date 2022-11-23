@@ -48,15 +48,16 @@ const sociallink =
     firstLink: <i className="fa-brands fa-linkedin"></i>,
     secondLink: <i className="fa-brands fa-square-instagram"></i>,
     thirdLink: <i className="fa-brands fa-square-twitter"></i>,
-    forthLink: <i className="fa-brands fa-youtube"></i>,
-    fifthLink: <i className="fa-brands fa-facebook"></i>,
-    appstoreLink:'https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png',
-    playstoreLink:'https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png'
+    forthLink: <i className="fa-brands fa-square-youtube"></i>,
+    fifthLink: <i className="fa-brands fa-square-facebook"></i>,
+    // appstoreLink:'https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png',
+    // playstoreLink:'https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png'
   };
 const Footer = () => {
   return (
     <>
       <div className="footer">
+      <div className="container-lg">
         <TopFooter />
         <div className="mid-footer-wrapper">
           <AboutZomato Aboutzomato={Aboutzomato} />
@@ -65,6 +66,7 @@ const Footer = () => {
           <LearnMore learnmore={learnmore} />
           <SocialLinks sociallink={sociallink} />
         </div>
+      </div>
       </div>
     </>
   )

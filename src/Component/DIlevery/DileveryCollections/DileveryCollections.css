@@ -1,0 +1,42 @@
+.dilevery-collection {
+    margin-top: 30px;
+}
+@media only screen and (min-width: 300px) and (max-width:435px){
+    .dilevery-item-cover {
+        height: 60px;
+        width: 90px;
+    }
+}
+@media only screen and (min-width: 435px) and (max-width:576px){
+    .dilevery-item-cover {
+        height: 85px;
+        width: 85px;
+    }
+}
+@media only screen and (max-width: 576px){   
+    button.slick-arrow.slick-next, button.slick-arrow.slick-prev {
+        display: none !important;
+    }  
+}
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+    .slick-arrow.slick-next, .slick-arrow.slick-prev {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .slick-arrow.slick-next, .slick-arrow.slick-prev {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 992px){}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 769px){
+}
+@media only screen and (min-width: 993px){}
+@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 1401px){}
+

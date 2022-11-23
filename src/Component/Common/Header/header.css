@@ -1,8 +1,6 @@
 .header {
     display: flex;
     flex-basis: 100%;
-    align-items: center;
-    margin: 12px 0;
     justify-content: space-between;
 }
 .web_logo{
@@ -14,8 +12,6 @@
 }
 .header-location {
     display: flex;
-    width: 120px;
-    justify-content: space-evenly;
     border-right: 1px solid;
 }
 .header-search-text{
@@ -31,7 +27,6 @@
 .search-box {
     display: flex;
     align-items: center;
-    width: 350px;
 }
 .header-content-wrapper {
     display: flex;
@@ -53,7 +48,170 @@ i.fa-solid.fa-magnifying-glass {
 }
 .header-right-content {
     display: flex;
-    width: 80px;
+    width: 120px;
     align-items: center;
     justify-content: space-between;
 }
+i.fa-solid.fa-cart-shopping {
+    color: red;
+}
+.form-select {
+    width: 80px;
+    padding: 0 5px !important;
+    border: none;
+    background-position: right;
+}
+.form-select {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M2 5l6 6 6-6%27/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 14px;
+    background-position-x: 56px;
+    background-position-y: 55%;
+}
+.form-select:focus {
+    border: none;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+i.fa-solid.fa-user {
+    color: red;
+}
+span.face-user {
+    height: 26px;
+    width: 26px;
+    background: aquamarine;
+    border-radius: 50%;
+    background-image: url('https://randomuser.me/api/portraits/men/32.jpg');
+    background-size: cover;
+}
+.mic-listener{
+    height: 20px;
+    filter: invert(1);
+    transition:all 1s ease;
+    width: 20px;
+}
+.header-mic {
+    width: 20px;
+    padding: 0 5px;
+}
+.header-modal-header.modal-header {
+    border: 0 !important;
+    justify-content: center !important;
+}
+.modal.show .modal-dialog {
+    transform: none;
+    margin: -2px;
+}
+.modal-content {
+    border-radius: 0px 0 20px 20px;
+}
+.modal-body{
+    background-image: url("https://i.giphy.com/media/TDlSjxwwM7WYqNf3fh/giphy.webp") !important;
+    height: 167px !important;
+    width: 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.modal-footer {
+    border: none  !important;
+    position: relative  !important;
+    justify-content: center  !important;
+}
+.modal-footer button.close-btn.btn.btn-primary {
+    position: absolute;
+    top: 2px;
+    background: black;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 576px){
+    i.fa-solid.fa-location-dot.absolute-center,i.fa-solid.fa-caret-down {
+        font-size: 13px;
+    }
+    .header-location  p {
+        font-size: 11px;
+    }
+    .header-location {
+        width: 75px;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+    i.fa-solid.fa-microphone {
+        font-size: 13px;
+    }
+    i.fa-solid.fa-magnifying-glass {
+        font-size: 13px;
+    }
+    input#header-search-text {
+        font-size: 13px;
+    }
+    .form-select {
+        font-size: 12px;
+        margin-left: 5px;
+        background-size: 8px;
+    }
+   
+}
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+    .header-location {
+        width: 90px;
+        padding-right: 10px;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .header .web_logo {
+        display: none;
+    }
+    .header-content-wrapper {
+        background-color: #8080801a;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    input#header-search-text {
+        background: transparent;
+    }
+    i.fa-solid.fa-microphone {
+        color: #fd0128;
+    }
+    .header-right-content {
+        display: none;
+    }
+    .search-box {
+        width: calc(100% - 95px);
+    }
+    .header {
+        margin: 10px 0;
+    }
+    .modal-dialog{
+        margin: 0 auto !important;
+    }
+}
+@media only screen and (max-width: 992px){}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 769px){
+    i.fa-solid.fa-microphone {
+        display: none;
+    }
+    .header {
+        align-items: center;
+        margin: 12px 0;
+    }
+    .header-location {
+        width: 120px;
+        justify-content: space-evenly;
+    }
+    .search-box {
+        width: 350px;
+    }
+}
+@media only screen and (min-width: 993px){}
+@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 1401px){}

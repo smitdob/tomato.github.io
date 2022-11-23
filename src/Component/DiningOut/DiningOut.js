@@ -2,7 +2,7 @@ import React from 'react'
 import Collections from '../Common/Collections/Collections'
 import "./DiningOut.css"
 import {diningOut} from '../../data/diningOut'
-import Filter from '../Common/Filter/Filter';
+// import Filter from '../Common/Filter/Filter';
 import ExploreSection from '../Common/Exploresection/ExploreSection'
 const collectionsList=[
   {
@@ -54,40 +54,40 @@ const collectionsList=[
       places:'8 Places'
   },
 ];
-const DiningFilter=[
-    {
-      id:1,
-      icon:<i className="fa-solid fa-sliders"></i>,
-      title:"Filters"
-    },
-    {
-      id:2,
-      title:"Ratting: 4.0+"
-    },
-    {
-      id:3,
-      title:"Safe and Hygienic"
-    },
-    {
-      id:4,
-      title:"Pure Veg"
-    },
-    {
-      id:5,
-      icon:<i className="fa-regular fa-clock"></i>,
-      title:"Dilevery Time"
-    },
-    {
-      id:6,
-      title:"Great Offers"
-    }
-];
+// const DiningFilter=[
+//     {
+//       id:1,
+//       icon:<i className="fa-solid fa-sliders"></i>,
+//       title:"Filters"
+//     },
+//     {
+//       id:2,
+//       title:"Ratting: 4.0+"
+//     },
+//     {
+//       id:3,
+//       title:"Safe and Hygienic"
+//     },
+//     {
+//       id:4,
+//       title:"Pure Veg"
+//     },
+//     {
+//       id:5,
+//       icon:<i className="fa-regular fa-clock"></i>,
+//       title:"Dilevery Time"
+//     },
+//     {
+//       id:6,
+//       title:"Great Offers"
+//     }
+// ];
 const diningList= diningOut;
 const DiningOut = () => {   
   return (
     <>
     <Collections list={collectionsList}/>
-    <Filter Filterlist={DiningFilter}/>
+    {/* <Filter Filterlist={DiningFilter}/> */}
     <ExploreSection list={diningList} collectionName='Dine-out Restaurants in Surat'/>
     </>
   )

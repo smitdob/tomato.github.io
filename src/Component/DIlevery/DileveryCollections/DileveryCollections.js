@@ -57,16 +57,80 @@ const DileveryItems =  [
     }
 ];
 const settings = {
-    infinite: false,
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <NextArrow/>,
-    prevArrow:  <PreArrow/>
+    prevArrow:  <PreArrow/>,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            initialSlide: 2,
+            nextArrow: false,
+            prevArrow: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            initialSlide: 2,
+            nextArrow: false,
+            prevArrow: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            nextArrow: false,
+            prevArrow: false,
+            dots: false
+          }
+        }
+      ]
 };
 const DileveryCollections = (props) => {
   return (
     <>
-        <div className="dilevery-collection">
+        <div className="dilevery-collection container-md">
             <div className="max-width">
                 <div className='collection-title'> Eat What Makes You Happy</div>
                 <Slider {...settings}>

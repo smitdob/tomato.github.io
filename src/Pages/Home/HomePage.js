@@ -7,14 +7,16 @@ import DiningOut from "../../Component/DiningOut/DiningOut"
 import NightLife from '../../Component/NightLife/NightLife'
 const HomePage = () => {
   const [activeTab, setActiveTab] = useState("Dilevery")
+ 
+  
+ 
+
   return (
     <>
-      <div className="container">
-        <Header />
+      <Header/>
         <TabOptions setActiveTab={setActiveTab} activeTab={activeTab} />
         {getCorrectScreen(activeTab)}
-        <Footer />
-      </div>
+      <Footer />
     </>
   )
 }
@@ -22,7 +24,7 @@ const HomePage = () => {
 const getCorrectScreen = (Tab) => {
   switch (Tab) {
     case "Dilevery":
-      return <Dilevery />
+      return <Dilevery/>  
     case "Dining Out":
       return <DiningOut />
     case "NightLife":

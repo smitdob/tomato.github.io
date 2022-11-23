@@ -1,16 +1,70 @@
 .filter {
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px 0;
+    justify-content: space-between;
+    margin: 35px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
 }
-.filter>div {
+.filter>div{
     display: flex;
     align-items: center;
     border: 1px solid;
     padding: 2px 7px;
     border-radius: 10px;
-    
+    transition: all 0.3s ease;
+}
+.filter>div:hover{
+    background-color: #ff0000b3;
+    transition: all 0.3s ease;
+    color: white;
 }
 .filter>div>i{
     padding-left: 5px;
 }
+
+@media only screen and (min-width: 300px) and (max-width:435px){
+    .filter>div {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 435px) and (max-width:576px){
+    .filter>div {
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 576px){   
+    .filter {
+        margin: 12px 0;
+        padding: 20px 0;
+    }
+    .filter>div {
+        padding: 5px 10px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .filter>div>i {
+        padding-left: 2px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+    .filter>div {
+        font-size: 12px;
+    }
+    .filter {
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (max-width: 992px){}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 769px){
+}
+@media only screen and (min-width: 993px){}
+@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 1401px){}
+

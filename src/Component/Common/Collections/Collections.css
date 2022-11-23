@@ -7,18 +7,17 @@
     align-items: center;
     margin-bottom: 10px;
 }
-.collection-subtitle-text{
+.collection-subtitle-text {
     color: #363636;
-    font-size: 18px;
+    font-size: 15px;
 }
-.collection-location{
+.collection-location {
     color: red;
     display: flex;
     align-items: center;
+    font-size: 15px;
 }
 .collection-cover {
-    height: 280px;
-    width: 208px;
     border-radius: 6px;
     position: relative;
     margin: 0 auto;
@@ -42,7 +41,6 @@
     position: absolute;
     left: 16px;
     bottom: 30px;
-    font-size: 18px;
     color: white;   
 }
 .collection-card-subtitle {
@@ -57,3 +55,102 @@
 i.fa-solid.fa-caret-right {
     padding-left: 5px;
 }
+
+
+
+@media only screen and (min-width: 300px) and (max-width:435px){
+    .collection-card-title {
+        font-size: 10px;
+    }
+    .collection-subtitle-text {
+        font-size: 9px;
+    }
+    .collection-location {
+        font-size: 9px;
+    }
+    .collection-cover {
+        height: 150px;
+        width: 102px;
+    }
+    .collection-card-subtitle {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 435px) and (max-width:510px){
+    .collection-card-title {
+        font-size: 10px;
+    }
+    .collection-subtitle-text {
+        font-size: 11px;
+    }
+    .collection-location {
+        font-size: 12px;
+    }
+    .collection-cover {
+        height: 150px;
+        width: 102px;
+    }
+    .collection-card-subtitle {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 510px) and (max-width:576px){
+    .collection-card-title {
+        font-size: 11px;
+    }
+    .collection-subtitle-text {
+        font-size: 12px;
+    }
+    .collection-location {
+        font-size: 12px;
+    }
+    .collection-cover {
+        height: 150px;
+        width: 120px;
+    }   
+}
+@media only screen and (max-width: 576px){   
+}
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+    .collection-cover {
+        height: 180px;
+        width: 130px;
+    }
+    .collection-card-title {
+        font-size: 11px;
+    }
+    .collection-card-subtitle {
+        font-size: 11px;
+    }
+    .collection-subtitle-text {
+        font-size: 13px;
+    }
+    .collection-location {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .collection-cover {
+        height: 200px;
+        width: 160px;
+    }
+}
+@media only screen and (max-width: 992px){}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 769px){
+    .collection-card-title{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 993px){
+    .collection-cover {
+        height: 280px;
+        width: 208px;
+    }
+}
+@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 1401px){}
