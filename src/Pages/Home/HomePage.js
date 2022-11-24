@@ -7,10 +7,6 @@ import DiningOut from "../../Component/DiningOut/DiningOut"
 import NightLife from '../../Component/NightLife/NightLife'
 const HomePage = () => {
   const [activeTab, setActiveTab] = useState("Dilevery")
- 
-  
- 
-
   return (
     <>
       <Header/>
