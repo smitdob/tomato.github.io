@@ -2,12 +2,23 @@ import React, { useState } from 'react';
 import './header.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-const Header = (props) => {
+import Badge from '@mui/material/Badge';
+import Menu from '@mui/material/Menu';
+const Header = () => {
   // responsive modal listnering 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
+
+  // cart menu
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClosee = () => {
+    setAnchorEl(null);
+  };
   return (
     <>
       <div className="header-wrapper container-md">
@@ -52,7 +63,31 @@ const Header = (props) => {
           <div className="header-right-content">
             <i className="fa-solid fa-user"></i>
             <p className="username">Smit</p>
-            <i className="fa-solid fa-cart-shopping"></i>
+            <Badge badgeContent={1} color="primary"
+              id="basic-button"
+              aria-controls={open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}><i className="fa-solid fa-cart-shopping"></i></Badge>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClosee}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+            >
+              <div className='card-details'>
+                                <i className="fa-solid fa-xmark cur-po"
+                                    onClick={handleClosee}
+                                ></i>
+                                <div className='header-menu-wrapper'>
+                                    <p>Your Cart is Empty</p>
+                                    <img className='gifcart' src="https://parcamkapinda.com/img/cart.gif" alt="cart gif" />
+                                </div>
+                            </div>
+            </Menu>
             <span className='face-user'></span>
           </div>
         </div>
