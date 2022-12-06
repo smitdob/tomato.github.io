@@ -1,0 +1,75 @@
+img.product-detail-image {
+    height: 300px;
+    object-fit: cover;
+    width: 390px;
+}
+h4.product-detail-title.mb-2.col-12 {
+    font-size: 20px;
+    font-weight: 600;
+    word-break: break-all;
+    font-family: 'Open Sans', sans-serif;
+}
+.ratting-num, .ratting-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.ratting-title {
+    border-right: 1px solid;
+    padding-right: 15px;
+}
+span.static-ratting {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(217 26 26);
+    padding-left: 15px;
+}
+span.detail-location {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+span.edtail-page-price {
+    font-size: 30px;
+    font-weight: 500;
+}
+i.fa-solid.fa-star, i.fa-solid.fa-location-dot {
+    width: 17px;
+}
+.quantity-buttons>span{
+    background-color: #eeee;
+    padding: 0 10px;
+}
+button.btn.btn-primary.curstom-add-to-cart-btnn {
+    display: block;
+    margin: 13px auto;
+}
+.quantity-change.MuiBox-root.css-0 {
+    width: 105px !important;
+    margin: 0 auto;
+}
+.css-13r4j3i .MuiTextField-root {
+    width: 6ch !important;
+}
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+   text-align: center;
+}
+.css-kgitkj {
+    margin: 0 auto;
+}
+.itemdetail-input-counter {
+    max-width: 45px;
+    border: 0;
+    background: #eee;
+    padding: 0;
+    margin: 01;
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+}
+.itemdetail-input-counter:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}

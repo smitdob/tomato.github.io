@@ -35,13 +35,13 @@ const DileveryFilter=[
   }
 ]
 const restroList= restro;
-const Dilevery = () => {
+const Dilevery = (props) => {
   return (
     <>
     <Filter Filterlist={DileveryFilter} />
     <DileveryCollections/>
     <TopBrand/>
-    <ExploreSection list={restroList} collectionName='Dilevery Restaurants in Surat' />
+    <ExploreSection list={restroList} collectionName='Dilevery Restaurants in Surat' props={props}/>
     </>
   )
 }

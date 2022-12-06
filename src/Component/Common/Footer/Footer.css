@@ -3,7 +3,7 @@
     position: relative;
     /* margin: 0 -220px; */
     overflow-x: hidden;
-    background: radial-gradient(circle, rgba(0, 252, 255, 0) 0%, rgb(28 20 2 / 36%) 0%), url(https://bit.ly/3UMbash);
+    background: radial-gradient(circle, rgba(0, 252, 255, 0) 0%, rgb(28 20 2 / 36%) 0%), url(https://c4.wallpaperflare.com/wallpaper/22/240/855/texture-gradient-simple-background-blue-wallpaper-preview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -325,6 +325,7 @@ a.mid-footer-link:hover {
         height: 40px;
         width: 150px;
         cursor: pointer;
+        filter: invert(1);
     }
     .region, .language {
         border: 1px solid rgb(181, 181, 181);

@@ -9,8 +9,10 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Piplod',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:2,
@@ -22,8 +24,10 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Continental, Chinese',
             location:'Iscon Mall, Piplod',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:3,
@@ -35,8 +39,10 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'New Textile Market',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:4,
@@ -48,8 +54,10 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'North Indian, Chinese',
             location:'Udhna',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:5,
@@ -61,8 +69,10 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'Cafe, Continental, Fast Food',
             location:'Vesu',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:6,
@@ -74,8 +84,10 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Magdalla',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:7,
@@ -87,8 +99,10 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani',
             location:'Magdalla',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:8,
@@ -100,8 +114,10 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'North Indian, South Indian, Chinese, Fast Food, Desserts, Beverages',
             location:'Katargam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:9,
@@ -113,8 +129,10 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Mithai, Street Food',
             location:'sarthana',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:10,
@@ -126,21 +144,25 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'North Indian, Chinese, Gujarati, Sichuan',
             location:'Adajan Gam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:11,
         type:"fast Food",
         info:{
             name:"Dharmnandan Live Puff House",
-            cover:'https://bit.ly/3T9DhQQ',
+            cover:'https://b.zmtcdn.com/data/pictures/9/3800319/23b94d7839423b7102d2bc529ed46777_featured_v2.jpg',
             ratting:'3.9',
             ratting_sub_title:'Natural',
             description:'fast Food',
             location:'Pal Gam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:12,
@@ -152,8 +174,10 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Burger, Fast Food, Beverages, Desserts, Finger Food',
             location:'Vesu',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:13,
@@ -165,8 +189,10 @@ export const diningOut=[
             ratting_sub_title:'Excellent',
             description:'Fast Food, Street Food',
             location:'Katargam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:14,
@@ -178,8 +204,10 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Tea, Fast Food, Street Food, Beverages, Sandwich, Coffee',
             location:'Varaccha',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:15,
@@ -191,21 +219,25 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'South Indian, Fast Food',
             location:'Pal Gam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:16,
         type:"restaurant",
         info:{
-            name:"https://b.zmtcdn.com/data/pictures/8/19367058/311cdd20b45165e02b9abde2c492b401_featured_v2.jpg",
-            cover:'https://bit.ly/3WtmniU',
+            name:"Gingalala Huu Huu",
+            cover:'https://b.zmtcdn.com/data/pictures/9/3800319/23b94d7839423b7102d2bc529ed46777_featured_v2.jpg',
             ratting:'3.5',
             ratting_sub_title:'Natural',
             description:'South Indian',
             location:'Pal Gam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:17,
@@ -217,8 +249,10 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Fast Food, Pizza, Burger, Beverages, Shake',
             location:'Sachin',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:18,
@@ -230,8 +264,10 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'North Indian, South Indian, Chinese, Fast Food, Desserts, Beverages',
             location:'Katargam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:19,
@@ -243,8 +279,10 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Mithai, Street Food',
             location:'sarthana',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:20,
@@ -256,8 +294,10 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Gujarati, Street Food',
             location:'Katargam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:21,
@@ -269,8 +309,10 @@ export const diningOut=[
             ratting_sub_title:'Excellent',
             description:'Burger',
             location:'Vesu',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:22,
@@ -282,8 +324,10 @@ export const diningOut=[
             ratting_sub_title:'Excellent',
             description:'Gujarati',
             location:'Katargam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:23,
@@ -295,8 +339,10 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Pizza',
             location:'Vesu',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     },
     {
         Id:24,
@@ -308,7 +354,9 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Gujarati, Street Food',
             location:'Katargam',
-            price:'249'
-        }
+            price:249,
+          
+        },
+        qnty:0
     }
 ]

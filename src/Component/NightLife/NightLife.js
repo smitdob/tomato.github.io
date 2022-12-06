@@ -8,49 +8,49 @@ const collectionsList=[
   {
       id:1,
       title:'Live Sports Screenings',
-      cover:'https://bit.ly/3U00S7N',
+      cover:'https://images.unsplash.com/photo-1669962367460-00b711b2e3f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
       places:'12 Places'
   },
   {
       id:2,
       title:'Veggie Friendly',
-      cover:'https://bit.ly/3U00Wo3',
+      cover:'https://images.unsplash.com/photo-1669733794267-0f09571b25df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
       places:'18 Places'
   },
   {
       id:3,
       title:'Insta-Worthy',
-      cover:'https://bit.ly/3FGxG0Z',
+      cover:'https://images.unsplash.com/photo-1669847145476-e9c43bb2d442?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       places:'6 Places'
   },
   {
       id:4,
       title:'Great Cafes',
-      cover:'https://bit.ly/3T1aygS',
+      cover:'https://images.unsplash.com/photo-1669809064880-bd8c855e220c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=377&q=80',
       places:'5 Places'
   },
   {
       id:5,
       title:'Street Food',
-      cover:'https://bit.ly/3h71eea',
+      cover:'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       places:'6 Places'
   },
   {
       id:6,
       title:'Ice Cream',
-      cover:'https://bit.ly/3Ucc0xY',
+      cover:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=481&q=80',
       places:'5 Places'
   },
   {
       id:7,
       title:'Meat Cravings',
-      cover:'https://bit.ly/3h9w7yF',
+      cover:'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=410&q=80',
       places:'6 Places'
   },
   {
       id:8,
       title:'Sweet Tooth',
-      cover:'https://bit.ly/3Nuo3EC',
+      cover:'https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80',
       places:'8 Places'
   },
 ];
@@ -83,13 +83,13 @@ const NightFilter=[
     }
 ];
 const nightlifeList= nightlife;
-const NightLife = () => {
+const NightLife = (props) => {
   return (
    <>
     <div>
       <Collections list={collectionsList} />
       <Filter Filterlist={NightFilter}/>
-      <ExploreSection list={nightlifeList} collectionName='Night-Life Restaurant in Surat'/>
+      <ExploreSection list={nightlifeList} collectionName='Night-Life Restaurant in Surat' props={props}/>
     </div>
    </>
   )
