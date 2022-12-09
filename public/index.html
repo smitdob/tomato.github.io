@@ -27,8 +27,39 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
   </body>
   <!-- boostrap JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- stickey header -->
+  <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var sticky = $('.stickey-header'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 150) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+        });
+    });   
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- back to top jquary -->
+<script>
+  $(document).ready(function () {
+      $(window).scroll(function () {
+          var scrollafter = 100;
+          if ($(this).scrollTop() > scrollafter) {
+              $('.back-to-top').fadeIn();
+          }
+          else {
+              $('.back-to-top').fadeOut();
+          }
+      });
+
+      $('#back-to-top').click(function () {
+          $('html,body').animate({ scrollTop: 0 }, 500);
+          return false;
+      });
+  });
+</script>
 </html>

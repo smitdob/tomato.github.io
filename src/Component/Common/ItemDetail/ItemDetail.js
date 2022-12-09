@@ -3,55 +3,18 @@ import { useParams } from 'react-router-dom'
 import './ItemDetail.css'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { useSelector } from 'react-redux'
+import { ADDMULTIPLE } from '../../../Redux/actions/action'
 import { ADD } from '../../../Redux/actions/action'
+const ItemDetail = (props) => {
 
-const ItemDetail = () => {
   const [data, setData] = useState([])
-  console.log(data)
+  const list = props.detailsetdata;
 
-  // item quantity 
-  const [qty, setQty] = useState(1);
-  console.log(qty)
+  const { id } = useParams();
+
+  const [qty, setQty] = useState(1); //item quantity
   const max = 100;
 
-  const newdata = data.map((obj) => {
-    return { ...obj, qnty: qty }
-  })
-  const refreshnewdata = data.map((obj) => {
-    return { ...obj, qnty: 0 }
-  })
-  
-
-  const update = () => {
-    setData(newdata);
-  }
-  const setqtynull=()=>{
-    setQty(1)
-  }
-
-  const decreaseQty = () => {
-    if (qty <= 1) {
-      setQty(1);
-    } else {
-      setQty(qty - 1);
-    }
-  };
-  const increaseQty = () => {
-    if (qty >= max) {
-      setQty(max);
-    } else {
-      setQty(qty + 1);
-    }
-  };
-  const onChange = (e) => {
-    const value = parseInt(e.target.value);
-    if (value >= 1 && value <= max) {
-      setQty(value);
-    }
-  };
-  const list = useSelector((state) => state.itemdetail.itemdetail);
-  const { id } = useParams();
   const compare = () => {
     let comparedata = list.filter((e) => {
       return e.Id == id;
@@ -61,8 +24,76 @@ const ItemDetail = () => {
   useEffect(() => {
     compare();
   }, [id])
-  // add to cart button code
+
+  //update data plus minus
+  const plus = data.map((obj) => {
+    return { ...obj, qnty: qty + 1 }
+  })
+  const plusadd = () => {
+    setData(plus);
+  }
+
+  const minus = data.map((obj) => {
+
+    if (obj.qnty > 1) {
+      return {
+        ...obj, qnty: qty - 1
+      }
+    }
+    else {
+      return {
+        ...obj, qnty: 1
+      }
+    }
+  })
+  const minusdlt = () => {
+    setData(minus);
+  }
+  
+  // quantity null
+  const setqtynull = () => {
+    setQty(1)
+  }
+  // refresh data and set qnty = 0
+  const refreshnewdata = data.map((obj) => {
+    return { ...obj, qnty: 0 }
+  })
+  const refresh = () => {
+    setData(refreshnewdata);
+  }
+  const decreaseQty = () => {
+    minusdlt();
+    if (qty <= 1) {
+      setQty(1);
+    } else {
+      setQty(qty - 1);
+    }
+  };
+  const increaseQty = () => {
+    if (qty >= max) {
+      setQty(max);
+      plusadd();
+    } else {
+      setQty(qty + 1);
+      plusadd();
+    }
+  };
+  // manual input quantity onChange={onChange}
+  // const onChange = (e) => {
+  //   const value = parseInt(e.target.value);
+  //   if (value >= 1 && value <= max) {
+  //     setQty(value);
+  //   }
+  // };
+  const onChange = (e) => {
+  };
+  // condition when which add data function is run
   const dispatch = useDispatch();
+  // send in multiple item
+  const sendmul = (e) => {
+    dispatch(ADDMULTIPLE(e))
+  }
+  //send single add to cart
   const send = (e) => {
     dispatch(ADD(e))
   }
@@ -99,8 +130,19 @@ const ItemDetail = () => {
                       <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={increaseQty}>+</span>
                     </div>
                     <div className="add-to-cart-btn">
-                      <button className='btn btn-primary curstom-add-to-cart-btnn'>Buy Now</button>
-                      <button className='btn btn-primary curstom-add-to-cart-btnn' onClick={() => {update(); setqtynull(); send(ele)}}>Add to cart</button>
+                      <button className='btn btn-primary curstom-add-to-cart-btnn' onClick={() => {
+                        if (ele.qnty > 0) {
+                          sendmul(ele);
+                        }
+                        else {
+                          send(ele);
+                          decreaseQty()
+                        }
+                         setqtynull();
+                        setTimeout(() => {
+                          refresh();
+                        }, 100);
+                      }} >Add to cart</button>
                     </div>
                   </div>
                 </div>

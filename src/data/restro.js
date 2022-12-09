@@ -9,7 +9,7 @@ export const restro=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Piplod',
-            price:230,
+            price:230,  
         },
         qnty:0
       

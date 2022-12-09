@@ -5,12 +5,6 @@ export const ADD =(item)=>{
         payload:item
     }
 }
-export const SETDATA =(i)=>{
-    return{
-        type:"SET_DATA",
-        payload:i
-    }
-}
 //remove item in store                                                                                                                                                                                                        // 
 export const DLT =(id)=>{
     return{
@@ -26,11 +20,10 @@ export const REMOVE =(iteam)=>{
         payload:iteam
     }
 }
-
-// add items to new cart
-export const ADDTOCHECK =(che)=>{
+// addmultiple
+export const ADDMULTIPLE =(mul)=>{
     return{
-        type:"ADD_CHECKOUT",
-        payload:che
+        type:"ADDMUL",
+        payload:mul
     }
 }

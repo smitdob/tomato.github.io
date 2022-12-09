@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 import { cartreducer } from "./reducer";
-import { itemdetail } from "./dataset"; 
-
 const rootreducer = combineReducers({
-    itemdetail, cartreducer
+     cartreducer
 })
 
 export default rootreducer

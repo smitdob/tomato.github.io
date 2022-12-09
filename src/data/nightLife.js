@@ -9,8 +9,7 @@ export const nightlife=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Piplod',
-            price:105, 
-          
+            price:199, 
         },
         qnty:0
     },
@@ -24,7 +23,7 @@ export const nightlife=[
             ratting_sub_title:'good',
             description:'North Indian, Continental, Chinese',
             location:'Iscon Mall, Piplod',
-            price:105,
+            price:249,
           
         },
         qnty:0
@@ -39,7 +38,7 @@ export const nightlife=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'New Textile Market',
-            price:105, 
+            price:139, 
           
         },
         qnty:0
@@ -54,7 +53,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'North Indian, Chinese',
             location:'Udhna',
-            price:105, 
+            price:145, 
           
         },
         qnty:0
@@ -69,7 +68,7 @@ export const nightlife=[
             ratting_sub_title:'good',
             description:'Cafe, Continental, Fast Food',
             location:'Vesu',
-            price:105,
+            price:149,
           
         },
         qnty:0
@@ -84,7 +83,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Magdalla',
-            price:105, 
+            price:299, 
           
         },
         qnty:0
@@ -99,7 +98,7 @@ export const nightlife=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani',
             location:'Magdalla',
-            price:105, 
+            price:249, 
           
         },
         qnty:0
@@ -114,7 +113,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'North Indian, South Indian, Chinese, Fast Food, Desserts, Beverages',
             location:'Katargam',
-            price:105, 
+            price:239, 
           
         },
         qnty:0
@@ -129,7 +128,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'Mithai, Street Food',
             location:'sarthana',
-            price:105, 
+            price:345, 
           
         },
         qnty:0
@@ -144,7 +143,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'North Indian, Chinese, Gujarati, Sichuan',
             location:'Adajan Gam',
-            price:105, 
+            price:255, 
           
         },
         qnty:0
@@ -159,7 +158,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'fast Food',
             location:'Pal Gam',
-            price:105, 
+            price:269, 
           
         },
         qnty:0
@@ -174,7 +173,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'Burger, Fast Food, Beverages, Desserts, Finger Food',
             location:'Vesu',
-            price:105, 
+            price:279, 
           
         },
         qnty:0
@@ -204,7 +203,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'Tea, Fast Food, Street Food, Beverages, Sandwich, Coffee',
             location:'Varaccha',
-            price:105, 
+            price:99, 
           
         },
         qnty:0
@@ -219,7 +218,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'South Indian, Fast Food',
             location:'Pal Gam',
-            price:105, 
+            price:98, 
           
         },
         qnty:0
@@ -249,7 +248,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'Fast Food, Pizza, Burger, Beverages, Shake',
             location:'Sachin',
-            price:105, 
+            price:139, 
           
         },
         qnty:0
@@ -264,7 +263,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'North Indian, South Indian, Chinese, Fast Food, Desserts, Beverages',
             location:'Katargam',
-            price:105, 
+            price:249, 
           
         },
         qnty:0
@@ -279,7 +278,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'Mithai, Street Food',
             location:'sarthana',
-            price:105, 
+            price:299, 
           
         },
         qnty:0
@@ -294,7 +293,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'Gujarati, Street Food',
             location:'Katargam',
-            price:105, 
+            price:289, 
           
         },
         qnty:0
@@ -309,7 +308,7 @@ export const nightlife=[
             ratting_sub_title:'Excellent',
             description:'Burger',
             location:'Vesu',
-            price:105, 
+            price:108, 
           
         },
         qnty:0
@@ -324,7 +323,7 @@ export const nightlife=[
             ratting_sub_title:'Excellent',
             description:'Gujarati',
             location:'Katargam',
-            price:105, 
+            price:179, 
           
         },
         qnty:0
@@ -339,7 +338,7 @@ export const nightlife=[
             ratting_sub_title:'Natural',
             description:'Pizza',
             location:'Vesu',
-            price:105, 
+            price:198, 
           
         },
         qnty:0
@@ -354,7 +353,7 @@ export const nightlife=[
             ratting_sub_title:'Good',
             description:'Gujarati, Street Food',
             location:'Katargam',
-            price:105, 
+            price:199, 
           
         },
         qnty:0

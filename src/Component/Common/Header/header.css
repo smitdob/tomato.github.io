@@ -310,6 +310,21 @@ hr.add-cart-hr {
     justify-content: space-evenly;
     align-items: center;
 }
+p.username {
+    color: black;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    background-color: #fff !important;
+    transition: all .3s ease;
+    color: #00000047;
+    top: 0%;
+    box-shadow: 0 0 17px 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
 @media only screen and (max-width: 992px){}
 @media only screen and (max-width: 1200px){}
 @media only screen and (max-width: 1400px){}
@@ -320,7 +335,7 @@ hr.add-cart-hr {
     }
     .header {
         align-items: center;
-        margin: 12px 0;
+        margin: 12px auto;
     }
     .header-location {
         width: 120px;

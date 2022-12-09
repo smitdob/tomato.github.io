@@ -82,7 +82,7 @@ const Cart = (props) => {
                             <div className="grand-total">
                                 <div className="g-total-wrapper">
                                     <p className='grand-total-p'>Total : ₹{price}</p>
-                                    <Link to='/checkout' className='checkout btn btn-primary'> Check Out</Link>
+                                    <Link className='checkout btn btn-primary'> Check Out</Link>
                                 </div>
                             </div>
                         </div> :

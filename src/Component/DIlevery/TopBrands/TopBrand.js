@@ -120,8 +120,8 @@ const settings = {
 const TopBrand = () => {
   return (
     <>
-      <div className="top-brand-wrapper ">
-        <div className='top-brands max-width container-md'>
+      <div className="top-brand-wrapper">
+        <div className='top-brands max-width container-md' >
           <div className='collection-title'>Top Brands for You</div>
           <Slider {...settings}>
             {BrandList.map((brand) => {

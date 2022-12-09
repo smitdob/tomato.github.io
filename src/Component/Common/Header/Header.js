@@ -53,8 +53,8 @@ const Header = (props) => {
   }, [total])
   return (
     <>
-      <div className="header-wrapper container-md">
-        <div className="header">
+      <div className="header-wrapper stickey-header" id='stickey-header'>
+        <div className="header container-md">
 
           <Link to='/dilevery'>
             <img className='web_logo' src="https://www.darlinggroup.co.nz/wp-content/uploads/2019/05/Tomato_Text.png" alt="website logo" onClick={() => { props.setActiveTab('dilevery') }} />

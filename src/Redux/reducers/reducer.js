@@ -5,8 +5,9 @@ export const cartreducer = (state = INIT_STATE, action) => {
     switch (action.type) {
         case 'ADD_CART':
             const itemIndex = state.carts.findIndex((iteam) => iteam.Id === action.payload.Id)
-            if (itemIndex >= 0) {
+            if (itemIndex >= 0){
                 state.carts[itemIndex].qnty += 1;
+                console.log('addcart if part')
             }
             else {
                 const temp = { ...action.payload, qnty: 1 }
@@ -15,31 +16,46 @@ export const cartreducer = (state = INIT_STATE, action) => {
                     carts: [...state.carts, temp]
                 }
             }
+        
         case 'RMV_CART':
-            const data = state.carts.filter((el) => el.Id !== action.payload)
-            return {
-                ...state,
-                carts: data
+                const data = state.carts.filter((el) => el.Id !== action.payload)
+                return {
+                    ...state,
+                    carts: data
+                } 
+
+        case 'ADDMUL':
+            const itemIndexmul = state.carts.findIndex((iteam) => iteam.Id === action.payload.Id)
+            if (itemIndexmul >= 0) {
+                state.carts[itemIndexmul].qnty += action.payload.qnty += 1;
+                console.log('addmul if part')
+                console.log(state.carts)
             }
-        case 'RMV_ONE':
-                const itemIndexdec = state.carts.findIndex((iteam) => iteam.id === action.payload.id)
-                if (state.carts[itemIndexdec].qnty >= 1) {
-                    const dltItem = state.carts[itemIndexdec].qnty -= 1
-                    console.log([...state.carts, dltItem]);
-
-                    return {
-                        ...state,
-                        carts: [...state.carts]
-                    }
+            else {
+                const temp = action.payload
+                return {
+                    ...state,
+                    carts: [...state.carts, temp]
                 }
-                else if (state.carts[itemIndexdec].qnty === 1) {
-                    const data = state.carts.filter((el) => el.Id !== action.payload)
-                    return {
-                        ...state,
-                        carts: data
-                    }
-            } 
+            }
 
+        case 'RMV_ONE':
+            const itemIndexdec = state.carts.findIndex((iteam) => iteam.Id === action.payload.Id)
+            if (state.carts[itemIndexdec].qnty >= 1) {
+                const dltItem = state.carts[itemIndexdec].qnty -= 1
+                console.log([...state.carts, dltItem]);
+                return {
+                    ...state,
+                    carts: [...state.carts]
+                }
+            }
+            else if (state.carts[itemIndexdec].qnty === 1) {
+                const data = state.carts.filter((el) => el.Id !== action.payload)
+                return {
+                    ...state,
+                    carts: data
+                }
+            }
         default:
             return state
     }

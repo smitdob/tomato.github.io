@@ -9,7 +9,7 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Piplod',
-            price:249,
+            price:79,
           
         },
         qnty:0
@@ -24,7 +24,7 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Continental, Chinese',
             location:'Iscon Mall, Piplod',
-            price:249,
+            price:105,
           
         },
         qnty:0
@@ -39,7 +39,7 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'New Textile Market',
-            price:249,
+            price:225,
           
         },
         qnty:0
@@ -54,7 +54,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'North Indian, Chinese',
             location:'Udhna',
-            price:249,
+            price:180,
           
         },
         qnty:0
@@ -69,7 +69,7 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'Cafe, Continental, Fast Food',
             location:'Vesu',
-            price:249,
+            price:200,
           
         },
         qnty:0
@@ -84,7 +84,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'North Indian, Chinese, Seafood, Biryani, Beverages',
             location:'Magdalla',
-            price:249,
+            price:195,
           
         },
         qnty:0
@@ -99,7 +99,7 @@ export const diningOut=[
             ratting_sub_title:'good',
             description:'North Indian, Chinese, Seafood, Biryani',
             location:'Magdalla',
-            price:249,
+            price:245,
           
         },
         qnty:0
@@ -114,7 +114,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'North Indian, South Indian, Chinese, Fast Food, Desserts, Beverages',
             location:'Katargam',
-            price:249,
+            price:299,
           
         },
         qnty:0
@@ -144,7 +144,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'North Indian, Chinese, Gujarati, Sichuan',
             location:'Adajan Gam',
-            price:249,
+            price:150,
           
         },
         qnty:0
@@ -159,7 +159,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'fast Food',
             location:'Pal Gam',
-            price:249,
+            price:300,
           
         },
         qnty:0
@@ -174,7 +174,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Burger, Fast Food, Beverages, Desserts, Finger Food',
             location:'Vesu',
-            price:249,
+            price:275,
           
         },
         qnty:0
@@ -189,7 +189,7 @@ export const diningOut=[
             ratting_sub_title:'Excellent',
             description:'Fast Food, Street Food',
             location:'Katargam',
-            price:249,
+            price:49,
           
         },
         qnty:0
@@ -204,7 +204,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Tea, Fast Food, Street Food, Beverages, Sandwich, Coffee',
             location:'Varaccha',
-            price:249,
+            price:96,
           
         },
         qnty:0
@@ -219,7 +219,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'South Indian, Fast Food',
             location:'Pal Gam',
-            price:249,
+            price:130,
           
         },
         qnty:0
@@ -234,7 +234,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'South Indian',
             location:'Pal Gam',
-            price:249,
+            price:175,
           
         },
         qnty:0
@@ -249,7 +249,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Fast Food, Pizza, Burger, Beverages, Shake',
             location:'Sachin',
-            price:249,
+            price:199,
           
         },
         qnty:0
@@ -264,7 +264,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'North Indian, South Indian, Chinese, Fast Food, Desserts, Beverages',
             location:'Katargam',
-            price:249,
+            price:250,
           
         },
         qnty:0
@@ -279,7 +279,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Mithai, Street Food',
             location:'sarthana',
-            price:249,
+            price:299,
           
         },
         qnty:0
@@ -294,7 +294,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Gujarati, Street Food',
             location:'Katargam',
-            price:249,
+            price:180,
           
         },
         qnty:0
@@ -309,7 +309,7 @@ export const diningOut=[
             ratting_sub_title:'Excellent',
             description:'Burger',
             location:'Vesu',
-            price:249,
+            price:59,
           
         },
         qnty:0
@@ -324,7 +324,7 @@ export const diningOut=[
             ratting_sub_title:'Excellent',
             description:'Gujarati',
             location:'Katargam',
-            price:249,
+            price:135,
           
         },
         qnty:0
@@ -339,7 +339,7 @@ export const diningOut=[
             ratting_sub_title:'Natural',
             description:'Pizza',
             location:'Vesu',
-            price:249,
+            price:140,
           
         },
         qnty:0
@@ -354,7 +354,7 @@ export const diningOut=[
             ratting_sub_title:'Good',
             description:'Gujarati, Street Food',
             location:'Katargam',
-            price:249,
+            price:259,
           
         },
         qnty:0
