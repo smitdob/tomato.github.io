@@ -1,0 +1,20 @@
+.face-user{
+    border-radius: 50%;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQFqHx6_31eXbQ/profile-displayphoto-shrink_800_800/0/1658040729443?e=2147483647&v=beta&t=sbP30tk84s89AJc9JRNr2HZZkSlIVYJRbWZc_aJfBQ8');
+    background-size: cover;
+    margin-left: 5px;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiAvatar-fallback.css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback {
+    display: none !important;
+
+}
+@media only screen and (max-width: 768px){
+    .face-user {
+        margin-left: 5px;
+    }
+}
+@media only screen and (min-width: 769px){
+    .face-user {
+        margin-left: 12px;
+    }
+}

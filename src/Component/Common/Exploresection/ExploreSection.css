@@ -9,6 +9,17 @@
 }
 
 
+/* .explore-section-wrapper{
+    background: rgb(0,252,255);
+
+    background-image: url(../../../../images/new.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    background-clip: border-box;
+}
+ */
+
 
 
 @media only screen and (min-width: 300px) and (max-width:435px){

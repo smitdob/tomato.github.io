@@ -70,7 +70,7 @@ const Cart = (props) => {
                                                             <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={() => send(ele)}>+</span>
                                                         </div>
                                                         <div className="add-to-cart-btn">
-                                                            <button className='btn btn-primary curstom-add-to-cart-btnn' onClick={() => dlt(ele.Id)}>Remove to cart</button>
+                                                            <button className='btn btn-primary curstom-add-to-cart-btnn' onClick={() => dlt(ele.Id)}>Remove from cart</button>
                                                         </div>
                                                     </div>
                                                 </div>
