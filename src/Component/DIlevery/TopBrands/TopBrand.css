@@ -1,8 +1,11 @@
-.top-brand-wrapper {
+/* .top-brand-wrapper {
     margin-top: 30px;
     background: #eee;
     padding-top: 30px;
     padding-bottom: 30px;
+} */
+.top-brand-wrapper {
+    background: #eee;
 }
 
 .top-brand-cover {
@@ -22,11 +25,9 @@
 }
 .top-brand-time {
     text-align: center;
-    margin: 0 auto;
+    margin: 5px auto;
 }
-/* .top-brands.max-width {
-    margin: 35px 0;
-} */
+
 
 @media only screen and (min-width: 300px) and (max-width:435px){
     .top-brand-cover {
@@ -41,8 +42,11 @@
     }
 }
 @media only screen and (max-width: 576px){   
-    .top-brands.max-width { 
-        margin: 12px 0;
+    .top-brand-wrapper {
+        margin: 10px auto;
+    }
+    .top-brands.max-width {
+        padding: 10px 0;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px)  {
@@ -50,24 +54,14 @@
         height: 60px;
         width: 60px;
     }
-    .top-brand-time {
-        font-size: 9px;
-    }
     .top-brands {
         margin-bottom: 5px;
         margin-top: 20px;
     }
 }
 @media only screen and (max-width: 768px){
-    .slick-arrow.slick-prev, .slick-arrow.slick-next{
-        display: none !important;
-    }
     .top-brand-time {
         font-size: 10px;
-    }
-    .top-brands {
-        margin-bottom: 5px;
-        margin-top: 20px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -84,12 +78,39 @@
     }
 }
 @media only screen and (max-width: 992px){}
-@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1200px){
+    .slick-arrow.slick-prev, .slick-arrow.slick-next{
+        display: none !important;
+    }
+}
 @media only screen and (max-width: 1400px){}
 @media only screen and (min-width: 577px){}
 @media only screen and (min-width: 769px){
 }
+@media only screen and (min-width: 576px) and (max-width: 992px){
+    .top-brand-wrapper {
+        margin: 15px auto;
+    }
+    .top-brands.max-width {
+        padding: 15px 0;
+    }
+}
 @media only screen and (min-width: 993px){}
-@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .top-brand-wrapper {
+        margin: 20px auto;
+    }
+    .top-brands.max-width {
+        padding: 20px 0;
+    }
+}
+@media only screen and (min-width: 1201px){
+    .top-brand-wrapper {
+        margin: 35px auto;
+    }
+    .top-brands.max-width {
+        padding: 30px 0;
+    }
+}
 @media only screen and (min-width: 1401px){}
 

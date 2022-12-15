@@ -1,6 +1,6 @@
-.collection {
+/* .collection {
     padding: 15px 0px 10px;
-}
+} */
 .collection-subtitle-row{
     display: flex;
     justify-content: space-between;
@@ -69,8 +69,8 @@ i.fa-solid.fa-caret-right {
         font-size: 9px;
     }
     .collection-cover {
-        height: 150px;
-        width: 102px;
+        height: 130px;
+        width: 100px;
     }
     .collection-card-subtitle {
         font-size: 12px;
@@ -94,7 +94,7 @@ i.fa-solid.fa-caret-right {
         font-size: 12px;
     }
 }
-@media only screen and (min-width: 510px) and (max-width:576px){
+@media only screen and (min-width: 511px) and (max-width:576px){
     .collection-card-title {
         font-size: 11px;
     }
@@ -106,10 +106,13 @@ i.fa-solid.fa-caret-right {
     }
     .collection-cover {
         height: 150px;
-        width: 120px;
-    }   
+        width: 115px;
+    }  
 }
 @media only screen and (max-width: 576px){   
+    .collection-wrapper {
+        margin: 10px auto;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px)  {
     .collection-cover {
@@ -137,6 +140,11 @@ i.fa-solid.fa-caret-right {
         width: 160px;
     }
 }
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .collection-wrapper {
+        margin: 15px auto;
+    }
+}
 @media only screen and (max-width: 992px){}
 @media only screen and (max-width: 1200px){}
 @media only screen and (max-width: 1400px){}
@@ -152,5 +160,14 @@ i.fa-solid.fa-caret-right {
         width: 208px;
     }
 }
-@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 994px) and (max-width:1200){
+    .collection-wrapper {
+        margin: 15px auto;
+    }
+}
+@media only screen and (min-width: 1201px){
+    .collection-wrapper {
+        margin: 35px auto;
+    }
+}
 @media only screen and (min-width: 1401px){}

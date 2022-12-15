@@ -102,27 +102,27 @@ const ItemDetail = (props) => {
       {
         data.map((ele) => {
           return (
-            <div className="item-detail-wrapper container-md my-5" key={ele.Id}>
+            <div className="item-detail-wrapper container-md" key={ele.Id}>
               <div className="row align-items-start">
-                <div className="item-detail-image col-5">
+                <div className="item-detail-image col-4 col-md-5">
                   <img className='product-detail-image' src={ele.info.cover} alt="" />
                 </div>
-                <div className="item-detail-content col-4">
+                <div className="item-detail-content col-4 col-md-4">
                   <div className="row">
                     <h4 className='product-detail-title mb-3 col-12'>{ele.info.name} - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt labore eveniet debitis quidem, delectus harum</h4>
                     <div className="detail-review mb-2 col-12">
                       <i className="fa-solid fa-star" style={{ color: '#f2b407' }}></i> <span className='ratting-num'>{ele.info.ratting}  </span>
                       <span className='ratting-title'>{ele.info.ratting_sub_title}</span> &nbsp; <span className='static-ratting'>200+ Ratting</span>
                     </div>
-                    <div className="detail-location mb-2 col-12">
+                    <div className="detail-location mb-2 col-md-12 col-6">
                       <i className="fa-solid fa-location-dot" style={{ color: "red" }}></i> <span className='detail-location'>{ele.info.location}</span>
                     </div>
-                    <div className="detail-price mb-2 col-12">
+                    <div className="detail-price mb-2 col-md-12 col-6">
                       <span className='edtail-page-price'> ₹ {ele.info.price * qty}</span>
                     </div>
                   </div>
                 </div>
-                <div className="item-detail-cart-action col-3 text-center">
+                <div className="item-detail-cart-action col-4 col-md-3 text-center">
                   <div>
                     <div className="quantity-buttons">
                       <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={decreaseQty}>-</span>

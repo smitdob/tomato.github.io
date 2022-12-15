@@ -13,12 +13,12 @@ const AboutZomato = ({Aboutzomato}) => {
    <div className='about-zomato mid-footer-div'>
       <h3 className='mid-footer-title'>{Name}</h3>
       <div className="mid-footer-link-wrapper">
-        <p><a href="/" className='mid-footer-link'>{firstLink}</a></p>
-        <p><a href="/" className='mid-footer-link'>{secondLink}</a></p>
-        <p><a href="/" className='mid-footer-link'>{thirdLink}</a></p>
-        <p><a href="/" className='mid-footer-link'>{forthLink}</a></p>
-        <p><a href="/" className='mid-footer-link'>{fifthLink}</a></p>
-        <p><a href="/" className='mid-footer-link'>{sixthLink}</a></p>
+        <p className='footer-content-p'><a href="/" className='mid-footer-link'>{firstLink}</a></p>
+        <p className='footer-content-p'><a href="/" className='mid-footer-link'>{secondLink}</a></p>
+        <p className='footer-content-p'><a href="/" className='mid-footer-link'>{thirdLink}</a></p>
+        <p className='footer-content-p'><a href="/" className='mid-footer-link'>{forthLink}</a></p>
+        <p className='footer-content-p'><a href="/" className='mid-footer-link'>{fifthLink}</a></p>
+        <p className='footer-content-p'><a href="/" className='mid-footer-link'>{sixthLink}</a></p>
       </div>
    </div>
    </>

@@ -98,8 +98,6 @@ const Header = (props) => {
                 </Modal.Footer>
               </Modal>
             </div>
-
-
             {/* <span className='face-user cur-po'></span> */}
             <Menu />
             {/* <p className="username">Smit</p> */}
@@ -220,6 +218,7 @@ const Header = (props) => {
               {
                 getdata.length ?
                   <div className='card-details'>
+                    <div class="cart-data-collection">
                     <table className='added-cart-sec-table'>
                       <thead>
                         <tr className='added-cart-sec-thead-tr'>
@@ -256,6 +255,7 @@ const Header = (props) => {
                       })
                     }
                     <hr className='add-cart-hr' />
+                    </div>
                     <div className="add-to-cart">
                       <Link to='/cart' onClick={handleClosee}><button className='hero-btn'>Go to Cart</button></Link>
                       <p className='header-grand-total'>Total : ₹ {price}</p>

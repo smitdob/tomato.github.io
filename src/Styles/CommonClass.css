@@ -31,12 +31,9 @@ body {
   padding: 5px 11px;
 }
 
-
-
 @media only screen and (min-width: 300px) and (max-width:435px) {
   .collection-title {
     margin-bottom: 5px;
-    margin-top: 1px;
     text-align: center;
     font-size: 13px;
   }
@@ -44,8 +41,7 @@ body {
 
 @media only screen and (min-width: 435px) and (max-width:576px) {
   .collection-title {
-    margin-bottom: 15px;
-    margin-top: 1px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
@@ -58,7 +54,6 @@ body {
   .collection-title {
     font-size: 17px;
     margin-bottom: 5px;
-    margin-top: 20px;
     text-align: center;
     font-weight: 500;
   }
@@ -71,9 +66,8 @@ body {
     font-size: 25px;
     color: #1c1c1c;
     margin-bottom: 10px;
-    font-weight: 500;
-    margin-top: 25px;
-}
+    font-weight: 500; 
+  }
 }
 
 @media only screen and (max-width: 992px) {}
@@ -92,7 +86,6 @@ body {
     color: #1c1c1c;
     margin-bottom: 10px;
     font-weight: 600;
-    margin-top: 25px;
   }
 }
 

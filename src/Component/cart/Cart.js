@@ -42,8 +42,7 @@ const Cart = (props) => {
     return (
         <>
             <div className='cart container-md'>
-                <p className="cart-title  my-3">Shopping Cart</p>
-                <div id="modal-modal-description">
+                <p className="collection-title">Shopping Cart</p>   
                     {
                         getdata.length ? <div className='cart-detail-wrapper'>
                             {
@@ -54,7 +53,7 @@ const Cart = (props) => {
                                                 <div className="item-detail-image col-4">
                                                     <img className='product-detail-image' src={ele.info.cover} alt="" />
                                                 </div>
-                                                <div className="item-detail-content col-4">
+                                                <div className="item-detail-content col-5">
                                                     <div className="">
                                                         <h4 className='product-detail-title col-12'>{ele.info.name} - Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
                                                         <div className="detail-price mb-2 col-12">
@@ -62,7 +61,7 @@ const Cart = (props) => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="item-detail-cart-action col-4 text-center">
+                                                <div className="item-detail-cart-action col-3 text-center">
                                                     <div>
                                                         <div className="quantity-buttons">
                                                             <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={ele.qnty <= 1 ? () => dlt(ele.Id) : () => remove(ele)}>-</span>
@@ -95,7 +94,6 @@ const Cart = (props) => {
                                 </div>
                             </div>
                     }
-                </div>
             </div>
         </>
     )

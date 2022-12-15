@@ -62,6 +62,8 @@ const settings = {
     slidesToScroll: 1,
     nextArrow: <NextArrow/>,
     prevArrow:  <PreArrow/>,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
         {
           breakpoint: 1024,

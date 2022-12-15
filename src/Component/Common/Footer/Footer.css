@@ -1,7 +1,5 @@
 .footer {
-    padding: 2.2rem 10px 2.2rem;
     position: relative;
-    /* margin: 0 -220px; */
     overflow-x: hidden;
     background: radial-gradient(circle, rgba(0, 252, 255, 0) 0%, rgb(28 20 2 / 36%) 0%), url(https://c4.wallpaperflare.com/wallpaper/22/240/855/texture-gradient-simple-background-blue-wallpaper-preview.jpg);
     background-repeat: no-repeat;
@@ -9,14 +7,15 @@
     background-attachment: fixed;
     color: white;
 }
-
+img.footer-logo{
+    filter: invert(1);
+}
 .region,
 .language {
     border: 1px solid rgb(181, 181, 181);
     border-radius: 0.6rem;
     padding: 6px 13px;
 }
-
 .footer-top-section {
     display: flex;
     align-items: center;
@@ -29,133 +28,104 @@
 .mid-footer-wrapper {
     display: flex;
     align-items: self-start;
-    justify-content: space-between;
-    margin-top: 30px;
 }
 
 h3.mid-footer-title {
-    font-size: 17px;
     font-weight: 600;
     pointer-events: none;
 }
-
 .mid-footer-link {
     text-decoration: none;
-    font-size: 14px;
-    line-height: 1.8rem;
     color: rgb(255 255 255);
     margin: 0.5rem 0px;
     transition: all .5s ease;
 }
-
 a.mid-footer-link:hover {
     transition: all .5s ease;
     color: #fd0128;
 }
-
 .mid-footer-social-link {
     text-decoration: none;
     color: rgb(255 255 255);
     transition: all .5s ease;
 }
-
 .mid-footer-icon-link-wrapper {
     display: flex;
 }
-
-.mid-footer-icon-link-wrapper p {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.fa-brands,
-.fab {
+.fa-brands,.fab {
     font-weight: 400;
-    font-size: 30px;
 }
-
 .mid-footer-social-link:hover {
     color: #fd0128;
     transition: all .5s ease;
 }
-
 .mid-footer-store-img-link-wrapper p {
     width: 122px;
     margin-bottom: 0px;
     margin-top: 13px;
 }
-
 .mid-footer-store-img-link-wrapper p img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.mid-footer-link-wrapper,
-.mid-footer-icon-link-wrapper {
-    margin-top: 20px;
-}
-
-
 /* media query */
 @media only screen and (min-width: 300px) and (max-width:435px) {
-
+    h3.mid-footer-title {
+        font-size: 13px;
+    }
     .region,
     .language {
         padding: 1px 8px;
         font-size: 11px;
     }
-
     .mid-footer-wrapper {
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-
     .mid-footer-wrapper>div {
         width: 100%;
         margin-bottom: 15px;
         border-bottom: 1px solid;
     }
-
-    .mid-footer-link-wrapper,
-    .mid-footer-icon-link-wrapper {
+    .mid-footer-link-wrapper, .mid-footer-icon-link-wrapper {
         justify-content: center;
         margin-top: 0px;
+        margin-bottom: 6px;
     }
-
     .mid-footer-store-img-link-wrapper {
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
     }
-
     .mid-footer-store-img-link-wrapper p {
         margin-top: 5px;
     }
+    .footer-logo {
+        height: 17px;
+        width: 63px;
+    }
+    .mid-footer-link {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .fa-brands, .fab {
+        font-size: 20px;
+    }
 }
-
-@media only screen and (min-width: 435px) and (max-width:576px) {
+@media only screen and (min-width:436px){
+    .mid-footer-wrapper {
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 436px) and (max-width:576px) {
     .region {
         margin-right: 10px;
     }
-
-    .footer {
-        padding: 1.3rem 10px 2.2rem;
-        margin-top: 15px;
-        margin-bottom: 30px;
-    }
-
     .mid-footer-wrapper {
         margin-top: 20px;
     }
-
-    .footer-logo {
-        height: 30px;
-        width: 120px;
-        cursor: pointer;
-    }
-
     .region,
     .language {
         padding: 2px 8px;
@@ -175,12 +145,10 @@ a.mid-footer-link:hover {
     .mid-footer-link {
         font-size: 10px;
         line-height: 0;
-        margin: 0.5rem 0px;
     }
 
     .fa-brands,
     .fab {
-        font-weight: 400;
         font-size: 17px;
     }
 
@@ -189,35 +157,41 @@ a.mid-footer-link:hover {
         margin-bottom: 0px;
         margin-top: 0px;
     }
-
-}
-
-@media only screen and (max-width: 576px) {
     .footer-logo {
-        height: 24px;
-        width: 108px;
+        height: 22px;
+        width: 82px;
         cursor: pointer;
     }
-
+}
+@media only screen and (min-width: 435px) and (max-width: 767px){
+    .footer {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer {
+        margin-top: 10px;
+        padding: 1.2rem 0px 2.2rem;
+     
+    }
     .region {
         margin-right: 10px;
     }
 
     .mid-footer-icon-link-wrapper p {
         font-size: 0px;
-        margin-right: 5px;
+        margin-right: 2.5px;
+        margin-left: 2.5px;
     }
 }
-
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
     .region {
         margin-right: 10px;
     }
 
     .footer {
         padding: 1.3rem 10px 2.2rem;
-        margin-top: 15px;
-    }
+        }
 
     .mid-footer-wrapper {
         margin-top: 20px;
@@ -238,21 +212,13 @@ a.mid-footer-link:hover {
     h3.mid-footer-title {
         font-size: 12px;
     }
-
-    .mid-footer-link-wrapper,
-    .mid-footer-icon-link-wrapper {
-        margin: 0;
-    }
-
     .mid-footer-link {
         font-size: 11px;
         line-height: 0;
-        margin: 0.5rem 0px;
     }
 
     .fa-brands,
     .fab {
-        font-weight: 400;
         font-size: 22px;
     }
 
@@ -261,11 +227,20 @@ a.mid-footer-link:hover {
         margin-bottom: 0px;
         margin-top: 6px;
     }
+    .mid-footer-icon-link-wrapper>p{
+        margin: 0 2px;
+    }
 }
-
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .mid-footer-link-wrapper, .mid-footer-icon-link-wrapper {
+        margin: 0;
+    }
+    .mid-footer-icon-link-wrapper>p{
+        margin: 0 5px;
+    }
+}
 @media only screen and (max-width: 768px) {}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
     .footer {
         padding: 2.3rem 10px 2.2rem;
     }
@@ -285,21 +260,13 @@ a.mid-footer-link:hover {
     h3.mid-footer-title {
         font-size: 12px;
     }
-
-    .mid-footer-link-wrapper,
-    .mid-footer-icon-link-wrapper {
-        margin: 0;
-    }
-
     .mid-footer-link {
         font-size: 13px;
         line-height: 0;
-        margin: 0.5rem 0px;
     }
 
     .fa-brands,
     .fab {
-        font-weight: 400;
         font-size: 23px;
     }
 
@@ -309,23 +276,34 @@ a.mid-footer-link:hover {
         margin-top: 6px;
     }
 }
-
+@media only screen and (min-width: 577px) and (max-width:992px){
+    .footer {
+        margin-top: 15px;
+    }
+}
 @media only screen and (max-width: 992px) {}
-
+@media only screen and (min-width: 993px) and (max-width:1200px){
+    .footer {
+        margin-top: 20px;
+    }
+}
 @media only screen and (max-width: 1200px) {}
-
 @media only screen and (max-width: 1400px) {}
-
 @media only screen and (min-width: 577px) {}
-
-@media only screen and (min-width: 769px) {}
-
+@media only screen and (min-width: 769px) {
+    .mid-footer-wrapper {
+        margin-top: 30px;
+    }
+    .mid-footer-icon-link-wrapper p {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+}
 @media only screen and (min-width: 993px) {
     .footer-logo {
         height: 40px;
         width: 150px;
         cursor: pointer;
-        filter: invert(1);
     }
     .region, .language {
         border: 1px solid rgb(181, 181, 181);
@@ -333,8 +311,26 @@ a.mid-footer-link:hover {
         padding: 6px 13px;
         margin-right: 15px;
     }
+    .footer {
+        padding: 2.2rem 10px 2.2rem;
+    }
+    h3.mid-footer-title {
+        font-size: 17px;
+    }
+    .mid-footer-link-wrapper, .mid-footer-icon-link-wrapper {
+        margin-top: 20px;
+    }
+    .mid-footer-link {
+        font-size: 14px;
+        line-height: 1.8rem;
+    }
+    .fa-brands, .fab {
+        font-size: 30px;
+    }
 }
-
-@media only screen and (min-width: 1201px) {}
-
+@media only screen and (min-width: 1201px) {
+    .footer {
+        margin-top: 35px;
+    }
+}
 @media only screen and (min-width: 1401px) {}

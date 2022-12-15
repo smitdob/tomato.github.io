@@ -1,10 +1,3 @@
-.explore-card {
-    margin: 12px 0 20px 0;
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    transition: all 0.5s ease;
-}
 .explore-card:hover {
     border: 1px solid transparent;
     box-shadow: 0px 0px 36px -1px rgb(0 0 0 / 12%);
@@ -14,20 +7,16 @@
 .price {
     color: white;
     position: absolute;
-    background: green;
-    padding: 5px 11px;
+    background: #4caf50d9;
     top: 0px;
     left: 0px;
     border-radius: 15px 0 15px 0;
 }
 .explore-card-cover {
-    height: 248px;
-    width: 248px;
     border-radius: 15px;
     position: relative;
     margin: 0 auto;
 }
-
 .explore-card-image {
     height: 100%;
     width: 100%;
@@ -35,7 +24,6 @@
     border-radius: 15px;
     position: absolute;
 }
-
 .res-row {
     display: flex;
     align-items: center;
@@ -43,14 +31,8 @@
     max-width: 235px;
     margin: 5px auto 0;
 }
-
 i.fa-solid.fa-star {
     color: #f2b407;
-}
-
-.res-name {
-    font-weight: 600;
-    font-size: 18px;
 }
 
 .ratting {
@@ -58,7 +40,6 @@ i.fa-solid.fa-star {
     z-index: 2;
     order: 1;
 }
-
 .gredient {
     background: linear-gradient(179deg, rgba(34, 193, 195, 0) 70%, rgba(28, 20, 2, 1) 100%);
     position: absolute;
@@ -68,24 +49,19 @@ i.fa-solid.fa-star {
     bottom: 0;
     border-radius: 15px;
 }
-
 .res-rows {
     max-width: 235px;
     text-align: center;
     margin-top: 0px;
-    margin: -3px auto 0;
 }
-
 .location {
     z-index: 2;
     color: white;
 }
-
 span.location-icon {
     color: #fd4d5f;
     padding-right: 3px;
 }
-
 .img-cover-text-wrapper {
     display: flex;
     position: absolute;
@@ -95,14 +71,13 @@ span.location-icon {
     right: 0;
     align-items: center;
 }
-.btn.btn-primary.curstom-add-to-cart-btn {
-    padding: 5px 16px;
-    margin-top: 7px;
+.res-name {
+    font-weight: 600;
 }
 @media only screen and (min-width: 300px) and (max-width:435px){
     .explore-card {
-        margin: 5px 0 0px 0;
-        padding: 10px;
+        margin: 0;
+        padding: 3px;
         border-radius: 15px;
         border: 1px solid transparent;
         transition: all 0.5s ease;
@@ -110,7 +85,6 @@ span.location-icon {
     }
     .explore-card-cover {
         height: 85px;
-        width: 100%;
     }
     .ratting {
         font-size: 8px;
@@ -129,7 +103,7 @@ span.location-icon {
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 2px 7px;
         margin: 0;
-        font-size: 10px;
+        font-size: 7px;
     }
     .img-cover-text-wrapper {
         justify-content: space-between;
@@ -139,7 +113,7 @@ span.location-icon {
 @media only screen and (min-width: 435px) and (max-width:576px){
     .explore-card {
         margin: 0;
-        padding: 10px;
+        padding: 2px;
         border-radius: 15px;
         border: 1px solid transparent;
         transition: all 0.5s ease;
@@ -147,7 +121,6 @@ span.location-icon {
     }
     .explore-card-cover {
         height: 110px;
-        width: 100%;
     }
     .ratting {
         font-size: 8px;
@@ -174,21 +147,25 @@ span.location-icon {
     }
 }
 @media only screen and (max-width: 576px){   
-  
- 
+    .explore-section-wrapper {
+        margin: 10px auto;
+    }
+    .price {
+    padding: 4px 5px;
+    font-size: 10px;
+}
 }
 @media only screen and (min-width: 576px) and (max-width: 768px)  {
     .explore-card {
         margin: 5px 0 0px 0;
-        padding: 10px;
+        padding: 2px;
         border-radius: 15px;
         border: 1px solid transparent;
         transition: all 0.5s ease;
         width: 31%;
     }
     .explore-card-cover {
-        height: 125px;
-        width: 100%;
+        height: 190px;
     }
     .ratting {
         font-size: 8px;
@@ -206,7 +183,11 @@ span.location-icon {
     }
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 2px 7px;
-        margin: 0;
+        margin: 0 0 5px 0;
+        font-size: 10px;
+    }
+    .price {
+        padding: 5px 10px;
         font-size: 10px;
     }
 }
@@ -214,7 +195,6 @@ span.location-icon {
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .explore-card {
-        margin: 5px 0 0px 0;
         padding: 10px;
         border-radius: 15px;
         border: 1px solid transparent;
@@ -222,8 +202,7 @@ span.location-icon {
         width: 31%;
     }
     .explore-card-cover {
-        height: 125px;
-        width: 100%;
+        height: 198px;
     }
     .ratting {
         font-size: 8px;
@@ -244,13 +223,58 @@ span.location-icon {
         margin: 0;
         font-size: 10px;
     }
+    .price {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
 }
-@media only screen and (max-width: 992px){}
+@media only screen and (max-width: 992px){
+    .explore-card-cover {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 1200px){}
 @media only screen and (max-width: 1400px){}
 @media only screen and (min-width: 577px){}
 @media only screen and (min-width: 769px){
 }
-@media only screen and (min-width: 993px){}
-@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 577px) and (max-width:992){
+    .explore-section-wrapper {
+        margin: 15px auto;
+    }
+} 
+@media only screen and (min-width: 993px){
+    .explore-card {
+        margin: 0px 0 20px 0;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+    }
+    .btn.btn-primary.curstom-add-to-cart-btn {
+        padding: 5px 16px;
+        margin-top: 7px;
+    }
+    .explore-card-cover {
+        height: 248px;
+        width: 248px;
+    }
+    .res-name {
+        font-size: 18px;
+    }
+    .price {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width:1200){
+    .explore-section-wrapper {
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width: 1201px){
+    .explore-section-wrapper {
+        margin: 35px auto;
+    }
+}
 @media only screen and (min-width: 1401px){}

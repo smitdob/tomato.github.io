@@ -1,16 +1,13 @@
 img.product-detail-image {
-    height: 300px;
     object-fit: cover;
-    width: 390px;
+    width: 100%;
 }
 h4.product-detail-title.mb-2.col-12 {
-    font-size: 20px;
     font-weight: 600;
     word-break: break-all;
     font-family: 'Open Sans', sans-serif;
 }
 .ratting-num, .ratting-title {
-    font-size: 15px;
     font-weight: 500;
     color: black;
     font-family: 'Open Sans', sans-serif;
@@ -20,18 +17,15 @@ h4.product-detail-title.mb-2.col-12 {
     padding-right: 15px;
 }
 span.static-ratting {
-    font-size: 15px;
     font-weight: 500;
     color: rgb(217 26 26);
     padding-left: 15px;
 }
 span.detail-location {
-    font-size: 15px;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
 }
 span.edtail-page-price {
-    font-size: 30px;
     font-weight: 500;
 }
 i.fa-solid.fa-star, i.fa-solid.fa-location-dot {
@@ -39,11 +33,9 @@ i.fa-solid.fa-star, i.fa-solid.fa-location-dot {
 }
 .quantity-buttons>span{
     background-color: #eeee;
-    padding: 0 10px;
 }
 button.btn.btn-primary.curstom-add-to-cart-btnn {
     display: block;
-    margin: 13px auto;
 }
 .quantity-change.MuiBox-root.css-0 {
     width: 105px !important;
@@ -59,7 +51,6 @@ button.btn.btn-primary.curstom-add-to-cart-btnn {
     margin: 0 auto;
 }
 .itemdetail-input-counter {
-    max-width: 45px;
     border: 0;
     background: #eee;
     padding: 0;
@@ -68,8 +59,318 @@ button.btn.btn-primary.curstom-add-to-cart-btnn {
     height: 100%;
     display: inline-block;
     text-align: center;
-    font-size: 24px;
 }
 .itemdetail-input-counter:focus-visible {
     outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+
+@media only screen and (max-width:450px) {
+    img.product-detail-image {
+        height: 82px;
+        width: 100%;
+    }
+    h4.product-detail-title {
+        font-size: 7px;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .detail-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .detail-location {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    i.fa-solid.fa-location-dot {
+        margin-right: 0;
+        font-size: 8px;
+        justify-content: left;
+    }
+    span.edtail-page-price {
+        font-size: 11px;
+    }
+    i.fa-solid.fa-star {
+        font-size: 8px;
+    }
+    .ratting-num, .ratting-title {
+        font-size: 8px;
+    }
+    span.static-ratting {
+        font-size: 8px;
+    }
+    span.detail-location {
+        font-size: 9px;     
+    }
+    .item-detail-cart-action.col-4.col-md-3.text-center {
+        padding: 0;
+    }
+    .quantity-buttons>span {
+        background-color: #eeee;
+        padding: 0 5px;
+        font-size: 10px !important;
+        cursor: pointer !important;
+    }
+    .itemdetail-input-counter {
+        max-width: 38px;
+        font-size: 10px;
+    }
+    button.btn.btn-primary.curstom-add-to-cart-btnn {
+        padding: 2px 6px;
+        font-size: 8px;
+        margin: 4px auto;
+    }
+    .detail-price {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width:451px) and (max-width:576px){
+    img.product-detail-image {
+        height: 150px;
+        width: 100%;
+    }
+    h4.product-detail-title {
+        font-size: 11px;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .detail-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .detail-location {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    i.fa-solid.fa-location-dot {
+        margin-right: 0;
+        font-size: 11px;
+        justify-content: left;
+    }
+    i.fa-solid.fa-star{
+        font-size: 11px;
+    }
+    span.edtail-page-price {
+        font-size: 11px;
+    }
+    .ratting-num, .ratting-title {
+        font-size: 11px;
+    }
+    span.static-ratting {
+        font-size: 11px;
+    }
+    span.detail-location {
+        font-size: 11px;     
+    }
+    .item-detail-cart-action.col-4.col-md-3.text-center {
+        padding: 0;
+    }
+    .quantity-buttons>span {
+        background-color: #eeee;
+        padding: 0 5px;
+        font-size: 12px !important;
+        cursor: pointer !important;
+    }
+    .itemdetail-input-counter {
+        max-width: 38px;
+        font-size: 12px;
+    }
+    button.btn.btn-primary.curstom-add-to-cart-btnn {
+        padding: 2px 6px;
+        font-size: 8px;
+        margin: 4px auto;
+    }
+    .detail-price {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 576px){
+    .item-detail-wrapper {
+        margin: 10px auto;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    img.product-detail-image {
+        height: 150px;
+        width: 100%;
+    }
+    h4.product-detail-title {
+        font-size: 13px;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .detail-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .detail-location {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    i.fa-solid.fa-location-dot {
+        margin-right: 0;
+        font-size: 13px;
+        justify-content: left;
+    }
+    i.fa-solid.fa-star {
+        font-size: 13px;
+    }
+    span.edtail-page-price {
+        font-size: 15px;
+    }
+    .ratting-num, .ratting-title {
+        font-size: 13px;
+    }
+    span.static-ratting {
+        font-size: 13px;
+    }
+    span.detail-location {
+        font-size: 13px;     
+    }
+    .item-detail-cart-action.col-4.col-md-3.text-center {
+        padding: 0;
+    }
+    .quantity-buttons>span {
+        background-color: #eeee;
+        padding: 0 5px;
+        font-size: 12px !important;
+        cursor: pointer !important;
+    }
+    .itemdetail-input-counter {
+        max-width: 38px;
+        font-size: 12px;
+    }
+    button.btn.btn-primary.curstom-add-to-cart-btnn {
+        padding: 2px 6px;
+        font-size: 8px;
+        margin: 4px auto;
+    }
+    .detail-price {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 676px) and (max-width: 768px){
+}
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (max-width: 992px){
+}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .item-detail-wrapper {
+        margin: 15px auto;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    img.product-detail-image {
+        height: 300px;
+    }
+    h4.product-detail-title {
+        font-size: 20px;
+    }
+    .detail-location {
+        font-size: 15px;
+    }
+    span.edtail-page-price {
+        font-size: 30px;
+    }
+    .ratting-num, .ratting-title {
+        font-size: 15px;
+    }
+    span.static-ratting {
+        font-size: 15px;
+    }
+    .quantity-buttons>span {
+        padding: 0 10px;
+    }
+    .itemdetail-input-counter {
+        max-width: 45px;
+        font-size: 24px;
+    }
+    button.btn.btn-primary.curstom-add-to-cart-btnn {
+        margin: 13px auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    img.product-detail-image {
+        height: 250px;
+        width: 100%;
+    }
+    h4.product-detail-title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .detail-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .detail-location {
+        display: flex;
+        align-items: center;
+    }
+    i.fa-solid.fa-location-dot {
+        margin-right: 8px;
+        font-size: 15px;
+    }
+    span.edtail-page-price {
+        font-size: 25px;
+    }
+    i.fa-solid.fa-star {
+        font-size: 14px;
+    }
+    .ratting-num, .ratting-title {
+        font-size: 14px;
+    }
+    span.static-ratting {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 993px){
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .item-detail-wrapper {
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width: 1201px){
+    .item-detail-wrapper {
+        margin: 35px auto;
+    }
+}
+@media only screen and (min-width: 1401px){
 }

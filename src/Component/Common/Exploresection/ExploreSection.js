@@ -4,8 +4,8 @@ import './ExploreSection.css'
 
 const ExploreSection = ({ list, collectionName, props }) => {
   return (
-    <div className="explore-section-wrapper">
-      <div className='explore-section container-md'>
+    <div className="explore-section-wrapper container-md">
+      <div className='explore-section'>
         <div className='collection-title'>{collectionName}</div>
         <div className="explore-grid">
           {list.map((restaurent) => {

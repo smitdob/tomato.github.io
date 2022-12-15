@@ -1,7 +1,7 @@
 import React from 'react'
 import Collections from '../Common/Collections/Collections';
 import ExploreSection from '../Common/Exploresection/ExploreSection';
-import Filter from '../Common/Filter/Filter';
+// import Filter from '../Common/Filter/Filter';
 import './NightLife.css';
 import {nightlife} from '../../data/nightLife';
 const collectionsList=[
@@ -54,41 +54,41 @@ const collectionsList=[
       places:'8 Places'
   },
 ];
-const NightFilter=[
-    {
-      id:1,
-      icon:<i className="fa-solid fa-sliders"></i>,
-      title:"Filters"
-    },
-    {
-      id:2,
-      title:"Ratting: 4.0+"
-    },
-    {
-      id:3,
-      title:"Safe and Hygienic"
-    },
-    {
-      id:4,
-      title:"Pure Veg"
-    },
-    {
-      id:5,
-      icon:<i className="fa-regular fa-clock"></i>,
-      title:"Dilevery Time"
-    },
-    {
-      id:6,
-      title:"Great Offers"
-    }
-];
+// const NightFilter=[
+//     {
+//       id:1,
+//       icon:<i className="fa-solid fa-sliders"></i>,
+//       title:"Filters"
+//     },
+//     {
+//       id:2,
+//       title:"Ratting: 4.0+"
+//     },
+//     {
+//       id:3,
+//       title:"Safe and Hygienic"
+//     },
+//     {
+//       id:4,
+//       title:"Pure Veg"
+//     },
+//     {
+//       id:5,
+//       icon:<i className="fa-regular fa-clock"></i>,
+//       title:"Dilevery Time"
+//     },
+//     {
+//       id:6,
+//       title:"Great Offers"
+//     }
+// ];
 const nightlifeList= nightlife;
 const NightLife = (props) => {
   return (
    <>
     <div>
       <Collections list={collectionsList} />
-      <Filter Filterlist={NightFilter}/>
+      {/* <Filter Filterlist={NightFilter}/> */}
       <ExploreSection list={nightlifeList} collectionName='Night-Life Restaurant in Surat' props={props}/>
     </div>
    </>

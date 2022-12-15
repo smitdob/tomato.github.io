@@ -8,22 +8,16 @@
 }
 .tab-image-container.absolute-center {
     margin-right: 10px;
-    width: 55px;
-    height: 55px;
     position: relative;
     border-radius: 50%;
 }
 
-p.tab-icon{
-    font-size: 35px;
-}
+
 .active-tab .tab-name{
     color: rgb(189, 43, 43);
     border-bottom: 2px solid rgb(189, 43, 43);
 }
-.tab-option{
-    margin-top: 35px;
-}
+
 
 
 @media only screen and (max-width: 576px){
@@ -79,15 +73,66 @@ p.tab-icon{
         justify-content: space-around;
     }
 }
+
+
 @media only screen and (max-width: 992px){}
-@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1200px){
+    .tab-item {
+        padding-bottom: 5px;
+    }
+}
 @media only screen and (max-width: 1400px){}
 @media only screen and (min-width: 577px){}
 @media only screen and (min-width: 769px){
+
+}
+@media only screen and (min-width: 769px) and (max-width :992px){
+    .tab-option {
+        margin: 15px auto;
+    }
+    p.tab-icon {
+        font-size: 22px;
+    }
+    .tab-image-container.absolute-center {
+        width: 40px;
+        height: 40px;
+    }
+    .tab-name {
+        font-size: 13px;
+    }
     .tab-item {
-        margin-right: 24px;
+        margin-right: 20px;
     }
 }
 @media only screen and (min-width: 993px){}
-@media only screen and (min-width: 1201px){}
+@media only screen and (min-width: 993px) and (max-width :1200px){
+    .tab-option {
+        margin: 20px auto;
+    }
+    p.tab-icon {
+        font-size: 25px;
+    }
+    .tab-image-container.absolute-center {
+        width: 45px;
+        height: 45px;
+    }
+    .tab-name {
+        font-size: 15px;
+    }
+    .tab-item {
+        margin-right: 20px;
+    }
+}
+@media only screen and (min-width: 1201px){
+    .tab-option {
+        margin: 35px auto;
+    }
+    p.tab-icon {
+        font-size: 33px;
+    }
+    .tab-image-container.absolute-center {
+        width: 55px;
+        height: 55px;
+    }
+}
 @media only screen and (min-width: 1401px){}
