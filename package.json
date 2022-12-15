@@ -2,7 +2,7 @@
   "name": "zomato",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://smitssssssssss.github.io/tomato.github.io",
+  "homepage": "http://smitdob.github.io/tomato.github.io",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
