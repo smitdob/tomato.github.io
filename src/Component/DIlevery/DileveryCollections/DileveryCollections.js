@@ -126,6 +126,17 @@ const settings = {
             prevArrow: false,
             dots: false
           }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            nextArrow: false,
+            prevArrow: false,
+            dots: false
+          }
         }
       ]
 };

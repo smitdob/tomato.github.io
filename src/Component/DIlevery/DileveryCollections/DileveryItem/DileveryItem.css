@@ -24,7 +24,17 @@
 }
 @media only screen and (min-width: 435px) and (max-width:576px){
 }
-@media only screen and (max-width: 576px){  
+@media only screen and (max-width: 435px){
+    .dilevery-item-cover {
+        height: 70px;
+        width: 70px;
+    }
+    .dilevery-item-title {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+ }
+@media only screen and (min-width: 436px) and (max-width: 576px){  
     .dilevery-item-cover {
         height: 85px;
         width: 85px;

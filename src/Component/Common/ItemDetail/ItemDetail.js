@@ -49,7 +49,7 @@ const ItemDetail = (props) => {
   const minusdlt = () => {
     setData(minus);
   }
-  
+
   // quantity null
   const setqtynull = () => {
     setQty(1)
@@ -103,26 +103,53 @@ const ItemDetail = (props) => {
         data.map((ele) => {
           return (
             <div className="item-detail-wrapper container-md" key={ele.Id}>
-              <div className="row align-items-start">
+              <div className="row align-items-center">
                 <div className="item-detail-image col-4 col-md-5">
                   <img className='product-detail-image' src={ele.info.cover} alt="" />
                 </div>
-                <div className="item-detail-content col-4 col-md-4">
+                <div className="item-detail-content col-7 col-md-7">
                   <div className="row">
-                    <h4 className='product-detail-title mb-3 col-12'>{ele.info.name} - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt labore eveniet debitis quidem, delectus harum</h4>
-                    <div className="detail-review mb-2 col-12">
-                      <i className="fa-solid fa-star" style={{ color: '#f2b407' }}></i> <span className='ratting-num'>{ele.info.ratting}  </span>
-                      <span className='ratting-title'>{ele.info.ratting_sub_title}</span> &nbsp; <span className='static-ratting'>200+ Ratting</span>
+                    <h4 className='product-detail-title col-12'>{ele.info.name} - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt labore eveniet debitis quidem, delectus harum</h4>
+                    <div className="detail-review col-12">
+                      <div>
+                      <span className='ratting-num'> <i className="fa-solid fa-star" style={{ color: '#f2b407' }}></i> {ele.info.ratting}  </span>
+                      <span className='ratting-title'>{ele.info.ratting_sub_title}</span>
+                      </div>
+                      <div>
+                       <span className='static-ratting'>200+ Ratting</span>
+                      </div>
                     </div>
-                    <div className="detail-location mb-2 col-md-12 col-6">
+                    <div className="detail-location col-md-12 col-6">
                       <i className="fa-solid fa-location-dot" style={{ color: "red" }}></i> <span className='detail-location'>{ele.info.location}</span>
                     </div>
-                    <div className="detail-price mb-2 col-md-12 col-6">
+                    <div className="detail-price col-md-12 col-6">
                       <span className='edtail-page-price'> ₹ {ele.info.price * qty}</span>
                     </div>
+                    <div className="item-detail-cart-action col-12 col-md-3 text-center">
+                    <div className="quantity-buttons">
+                      <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={decreaseQty}>-</span>
+                      <input type="text" className='itemdetail-input-counter' placeholder='1' onChange={onChange} value={qty} />
+                      <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={increaseQty}>+</span>
+                    </div>
+                    <div className="add-to-cart-btn">
+                      <button className='btn btn-primary curstom-add-to-cart-btnn' onClick={() => {
+                        if (ele.qnty > 0) {
+                          sendmul(ele);
+                        }
+                        else {
+                          send(ele);
+                          decreaseQty()
+                        }
+                        setqtynull();
+                        setTimeout(() => {
+                          refresh();
+                        }, 100);
+                      }} >Add to cart</button>
+                    </div>
+                </div>
                   </div>
                 </div>
-                <div className="item-detail-cart-action col-4 col-md-3 text-center">
+                {/* <div className="item-detail-cart-action col-4 col-md-3 text-center">
                   <div>
                     <div className="quantity-buttons">
                       <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={decreaseQty}>-</span>
@@ -138,14 +165,14 @@ const ItemDetail = (props) => {
                           send(ele);
                           decreaseQty()
                         }
-                         setqtynull();
+                        setqtynull();
                         setTimeout(() => {
                           refresh();
                         }, 100);
                       }} >Add to cart</button>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           )

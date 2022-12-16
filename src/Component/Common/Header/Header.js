@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
 import Badge from '@mui/material/Badge';
 import Menu from '@mui/material/Menu';
 import { useSelector } from 'react-redux';
@@ -82,9 +82,9 @@ const Header = (props) => {
               <i className="fa-solid fa-magnifying-glass"></i>
               <input type="text" className='header-search-text form-control' id="header-search-text" aria-describedby="passwordHelpBlock" placeholder='Search here' />
             </div>
-            <div className="header-mic">
-              <i className="fa-solid fa-microphone" onClick={handleShow}></i>
-              {/* modal code */}
+            {/* <div className="header-mic">
+             <i className="fa-solid fa-microphone" onClick={handleShow}></i>
+             
               <Modal show={show} onHide={handleClose} className='mobile-modal'>
                 <Modal.Header className='header-modal-header'>
                   <Modal.Title>Listening</Modal.Title>
@@ -97,13 +97,13 @@ const Header = (props) => {
                   </Button>
                 </Modal.Footer>
               </Modal>
-            </div>
+            </div> */}
             {/* <span className='face-user cur-po'></span> */}
             <Menu />
             {/* <p className="username">Smit</p> */}
 
             <div className="headermobilecart">
-              <div className="d-flex">
+              <div className="d-flex align-items-center">
                 <Tooltip title="Cart">
                   <Badge badgeContent={getdata.length} color="primary"
                     className='cur-po mobile-header-menu'

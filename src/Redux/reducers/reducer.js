@@ -7,7 +7,6 @@ export const cartreducer = (state = INIT_STATE, action) => {
             const itemIndex = state.carts.findIndex((iteam) => iteam.Id === action.payload.Id)
             if (itemIndex >= 0){
                 state.carts[itemIndex].qnty += 1;
-                console.log('addcart if part')
             }
             else {
                 const temp = { ...action.payload, qnty: 1 }
@@ -28,8 +27,6 @@ export const cartreducer = (state = INIT_STATE, action) => {
             const itemIndexmul = state.carts.findIndex((iteam) => iteam.Id === action.payload.Id)
             if (itemIndexmul >= 0) {
                 state.carts[itemIndexmul].qnty += action.payload.qnty += 1;
-                console.log('addmul if part')
-                console.log(state.carts)
             }
             else {
                 const temp = action.payload
@@ -43,7 +40,7 @@ export const cartreducer = (state = INIT_STATE, action) => {
             const itemIndexdec = state.carts.findIndex((iteam) => iteam.Id === action.payload.Id)
             if (state.carts[itemIndexdec].qnty >= 1) {
                 const dltItem = state.carts[itemIndexdec].qnty -= 1
-                console.log([...state.carts, dltItem]);
+                // console.log([...state.carts, dltItem]);
                 return {
                     ...state,
                     carts: [...state.carts]

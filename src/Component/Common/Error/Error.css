@@ -9,3 +9,131 @@ a.empty-cart-back-to-home.text-decoration-none.text-dark {
     font-size: 18px;
     font-weight: 400;
 }
+@media only screen and (max-width:450px) {
+    
+}
+@media only screen and (min-width:451px) and (max-width:576px){
+    
+}
+@media only screen and (min-width:451px) and (max-width:768px){
+    .search-box {
+        width: calc(100% - 95px);
+    }
+    .MuiBox-root.css-5nwj3y {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 576px){
+    i.fa-solid.fa-caret-down {
+        font-size: 13px;
+    }
+    .header-location  p {
+        font-size: 11px;
+    }
+    i.fa-solid.fa-magnifying-glass {
+        font-size: 13px;
+    }
+    input#header-search-text {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .empty-cart .m-5 .form-select {
+        background-size: 10px;
+        background-position-x: 39px;
+        background-position-y: 63%;
+        font-size: 12px;
+        margin-left: 6px;
+        width: 90px;
+    }
+    i.fa-solid.fa-location-dot {
+        font-size: 12px;
+    }
+    ul.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+        padding: 10px 15px;
+    }
+    .added-cart-sec-thead-tr th {
+        padding-bottom: 0px !important;
+        font-size: 12px;
+    }
+    .header-cart-image {
+        width: 38%;
+    }
+    .header-cart-image .trash-bin {
+        font-size: 10px;
+    }
+    .header-cart-content {
+        padding: 0 0 0 38px;
+    }
+    .header-cart-content-name, .header-cart-content-price, .header-cart-content-qnty {
+        font-size: 12px;
+        line-height: 18.5px;
+        font-weight: 500;
+    }
+    p.header-cart-total {
+        font-size: 14px;
+        font-weight: 900;
+    }
+    span.text.different {
+        font-weight: 600;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 676px){
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+        top: 50px !important;
+        width: 318px !important;
+        position: relative;
+        right: 0 !important;
+    }
+}
+@media only screen and (min-width: 677px) and (max-width: 768px){
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+        top: 50px !important;
+        width: 318px !important;
+        position: relative;
+        right: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px)  {
+    .header-location {
+        width: 90px;
+        margin-left: 15px;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+    .form-select {
+        background-size: 10px;
+        background-position-x: 45px;
+        background-position-y: 63%;
+        font-size: 12px;
+        width: 70px;
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (max-width: 992px){
+    .error-img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1400px){}
+@media only screen and (min-width: 577px){}
+@media only screen and (min-width: 769px){
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+}
+@media only screen and (min-width: 993px){
+    .error-img{
+        width: 500px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+}
+@media only screen and (min-width: 1201px){
+}
+@media only screen and (min-width: 1401px){
+}

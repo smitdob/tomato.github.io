@@ -10,10 +10,8 @@ import { useEffect } from 'react';
 const Cart = (props) => {
     // price usestate hook
     const [price, setPrice] = useState(0)
-    console.log(price)
     // get data from store    
     const getdata = useSelector((state) => state.cartreducer.carts);
-    console.log(getdata);
     const dispatch = useDispatch();
     // delete from carts reducer
     const dlt = (id) => {
@@ -49,19 +47,18 @@ const Cart = (props) => {
                                 getdata.map((ele) => {
                                     return (
                                         <div className="item-detail-wrapper" key={ele.Id}>
-                                            <div className="row align-items-start">
+                                            <div className="row align-items-center">
                                                 <div className="item-detail-image col-4">
                                                     <img className='product-detail-image' src={ele.info.cover} alt="" />
                                                 </div>
-                                                <div className="item-detail-content col-5">
+                                                <div className="item-detail-content col-6">
                                                     <div className="">
-                                                        <h4 className='product-detail-title col-12'>{ele.info.name} - Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
-                                                        <div className="detail-price mb-2 col-12">
+                                                        <h4 className='product-detail-title'>{ele.info.name} - Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                                                        <div className="detail-price">
                                                             <span className='edtail-page-price'> ₹ {ele.info.price * ele.qnty}</span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div className="item-detail-cart-action col-3 text-center">
+                                                    <div className="item-detail-cart-action text-center">
                                                     <div>
                                                         <div className="quantity-buttons">
                                                             <span className='' style={{ fontSize: 24, cursor: "pointer" }} onClick={ele.qnty <= 1 ? () => dlt(ele.Id) : () => remove(ele)}>-</span>
@@ -71,6 +68,7 @@ const Cart = (props) => {
                                                         <div className="add-to-cart-btn">
                                                             <button className='btn btn-primary curstom-add-to-cart-btnn' onClick={() => dlt(ele.Id)}>Remove from cart</button>
                                                         </div>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>

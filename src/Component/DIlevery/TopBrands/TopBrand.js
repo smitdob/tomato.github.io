@@ -27,7 +27,7 @@ const BrandList = [
   {
     id: 5,
     time: "50min",
-    cover: "https://e7.pngegg.com/pngimages/582/796/png-clipart-submarine-sandwich-yorkville-toronto-clemmons-subway-wrap-menu-food-text.png"
+    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtl7QNBUME7c3Tf86FlV8SKv8eKGvyCpZXfPvc0mC4pSi7HQzOFWlcA8FsDJzeKIcvhO4&usqp=CAU"
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const BrandList = [
   {
     id: 9,
     time: "11min",
-    cover: "https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png"
+    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsCFKKIlH6DAEH-w1Q16SKsjFOlhNVNbwBw&usqp=CAU"
   },
   {
     id: 10,
@@ -112,7 +112,7 @@ const settings = {
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 3,
         dots: false
       }

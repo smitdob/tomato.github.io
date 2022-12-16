@@ -1,9 +1,10 @@
 .explore-card:hover {
     border: 1px solid transparent;
     box-shadow: 0px 0px 36px -1px rgb(0 0 0 / 12%);
-    transition: box-shadow  0.5s ease;
+    transition: box-shadow 0.5s ease;
     transition: transform 0s ease;
 }
+
 .price {
     color: white;
     position: absolute;
@@ -12,11 +13,13 @@
     left: 0px;
     border-radius: 15px 0 15px 0;
 }
+
 .explore-card-cover {
     border-radius: 15px;
     position: relative;
     margin: 0 auto;
 }
+
 .explore-card-image {
     height: 100%;
     width: 100%;
@@ -24,6 +27,7 @@
     border-radius: 15px;
     position: absolute;
 }
+
 .res-row {
     display: flex;
     align-items: center;
@@ -31,6 +35,7 @@
     max-width: 235px;
     margin: 5px auto 0;
 }
+
 i.fa-solid.fa-star {
     color: #f2b407;
 }
@@ -40,6 +45,7 @@ i.fa-solid.fa-star {
     z-index: 2;
     order: 1;
 }
+
 .gredient {
     background: linear-gradient(179deg, rgba(34, 193, 195, 0) 70%, rgba(28, 20, 2, 1) 100%);
     position: absolute;
@@ -49,19 +55,23 @@ i.fa-solid.fa-star {
     bottom: 0;
     border-radius: 15px;
 }
+
 .res-rows {
     max-width: 235px;
     text-align: center;
     margin-top: 0px;
 }
+
 .location {
     z-index: 2;
     color: white;
 }
+
 span.location-icon {
     color: #fd4d5f;
     padding-right: 3px;
 }
+
 .img-cover-text-wrapper {
     display: flex;
     position: absolute;
@@ -71,10 +81,58 @@ span.location-icon {
     right: 0;
     align-items: center;
 }
+
 .res-name {
     font-weight: 600;
 }
-@media only screen and (min-width: 300px) and (max-width:435px){
+
+@media only screen and (max-width:299px) {
+    .explore-grid {
+        gap: 5px;
+    }
+    .explore-card {
+        margin: 0;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+        width: 48%;
+    }
+
+    .explore-card-cover {
+        height: 98px;
+    }
+    .ratting {
+        font-size: 8px;
+    }
+
+    .location {
+        font-size: 8px;
+    }
+
+    .res-description {
+        font-size: 8px;
+        height: 25px;
+        padding-top: 4px;
+    }
+
+    .res-name {
+        font-size: 8px;
+    }
+
+    .btn.btn-primary.curstom-add-to-cart-btn {
+        padding: 2px 7px;
+        margin: 0;
+        font-size: 7px;
+    }
+
+    .img-cover-text-wrapper {
+        justify-content: space-between;
+        padding: 0 2px;
+    }   
+
+}
+
+@media only screen and (min-width: 300px) and (max-width:435px) {
     .explore-card {
         margin: 0;
         padding: 3px;
@@ -83,34 +141,42 @@ span.location-icon {
         transition: all 0.5s ease;
         width: 31%;
     }
+
     .explore-card-cover {
         height: 85px;
     }
+
     .ratting {
         font-size: 8px;
     }
+
     .location {
         font-size: 8px;
     }
+
     .res-description {
         font-size: 8px;
         height: 25px;
         padding-top: 4px;
     }
+
     .res-name {
         font-size: 8px;
     }
+
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 2px 7px;
         margin: 0;
         font-size: 7px;
     }
+
     .img-cover-text-wrapper {
         justify-content: space-between;
         padding: 0 5px;
     }
 }
-@media only screen and (min-width: 435px) and (max-width:576px){
+
+@media only screen and (min-width: 435px) and (max-width:576px) {
     .explore-card {
         margin: 0;
         padding: 2px;
@@ -119,43 +185,53 @@ span.location-icon {
         transition: all 0.5s ease;
         width: calc((100% - 20px) / 3);
     }
+
     .explore-card-cover {
         height: 110px;
     }
+
     .ratting {
         font-size: 8px;
     }
+
     .location {
         font-size: 8px;
     }
+
     .res-description {
         font-size: 10px;
         height: 35px;
         padding-top: 4px;
     }
+
     .res-name {
         font-size: 10px;
     }
+
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 2px 7px;
         margin: 0;
         font-size: 10px;
     }
+
     .img-cover-text-wrapper {
         justify-content: space-between;
         padding: 0 8px;
     }
 }
-@media only screen and (max-width: 576px){   
+
+@media only screen and (max-width: 576px) {
     .explore-section-wrapper {
         margin: 10px auto;
     }
+
     .price {
-    padding: 4px 5px;
-    font-size: 10px;
+        padding: 4px 5px;
+        font-size: 10px;
+    }
 }
-}
-@media only screen and (min-width: 576px) and (max-width: 768px)  {
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
     .explore-card {
         margin: 5px 0 0px 0;
         padding: 2px;
@@ -164,36 +240,44 @@ span.location-icon {
         transition: all 0.5s ease;
         width: 31%;
     }
+
     .explore-card-cover {
         height: 190px;
     }
+
     .ratting {
         font-size: 8px;
     }
+
     .location {
         font-size: 8px;
     }
+
     .res-description {
         font-size: 10px;
         height: 35px;
         padding-top: 4px;
     }
+
     .res-name {
         font-size: 12px;
     }
+
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 2px 7px;
         margin: 0 0 5px 0;
         font-size: 10px;
     }
+
     .price {
         padding: 5px 10px;
         font-size: 10px;
     }
 }
-@media only screen and (max-width: 768px){
-}
-@media only screen and (min-width: 768px) and (max-width: 992px){
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .explore-card {
         padding: 10px;
         border-radius: 15px;
@@ -201,49 +285,62 @@ span.location-icon {
         transition: all 0.5s ease;
         width: 31%;
     }
+
     .explore-card-cover {
         height: 198px;
     }
+
     .ratting {
         font-size: 8px;
     }
+
     .location {
         font-size: 8px;
     }
+
     .res-description {
         font-size: 12px;
         height: 35px;
         padding-top: 4px;
-    }   
+    }
+
     .res-name {
         font-size: 14px;
     }
+
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 4px 15px;
         margin: 0;
         font-size: 10px;
     }
+
     .price {
         padding: 8px 10px;
         font-size: 10px;
     }
 }
-@media only screen and (max-width: 992px){
+
+@media only screen and (max-width: 992px) {
     .explore-card-cover {
         width: 100%;
     }
 }
-@media only screen and (max-width: 1200px){}
-@media only screen and (max-width: 1400px){}
-@media only screen and (min-width: 577px){}
-@media only screen and (min-width: 769px){
-}
-@media only screen and (min-width: 577px) and (max-width:992){
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1400px) {}
+
+@media only screen and (min-width: 577px) {}
+
+@media only screen and (min-width: 769px) {}
+
+@media only screen and (min-width: 577px) and (max-width:992) {
     .explore-section-wrapper {
         margin: 15px auto;
     }
-} 
-@media only screen and (min-width: 993px){
+}
+
+@media only screen and (min-width: 993px) {
     .explore-card {
         margin: 0px 0 20px 0;
         padding: 10px;
@@ -251,30 +348,37 @@ span.location-icon {
         border: 1px solid transparent;
         transition: all 0.5s ease;
     }
+
     .btn.btn-primary.curstom-add-to-cart-btn {
         padding: 5px 16px;
         margin-top: 7px;
     }
+
     .explore-card-cover {
         height: 248px;
         width: 248px;
     }
+
     .res-name {
         font-size: 18px;
     }
+
     .price {
         padding: 8px 10px;
         font-size: 14px;
     }
 }
-@media only screen and (min-width: 993px) and (max-width:1200){
+
+@media only screen and (min-width: 993px) and (max-width:1200) {
     .explore-section-wrapper {
         margin: 20px auto;
     }
 }
-@media only screen and (min-width: 1201px){
+
+@media only screen and (min-width: 1201px) {
     .explore-section-wrapper {
         margin: 35px auto;
     }
 }
-@media only screen and (min-width: 1401px){}
+
+@media only screen and (min-width: 1401px) {}

@@ -4,6 +4,9 @@
 button.btn.btn-primary.cart-close-btn {
     font-size: 11px;
 }
+.cart .detail-price{
+    margin-left: 0;
+}
 .css-79ws1d-MuiModal-root {
     overflow: auto !important;
 }
@@ -37,28 +40,41 @@ button.btn.btn-primary.cart-close-btn {
     font-weight: 500;
 }
 .cart .item-detail-wrapper {
+    display: block;
     overflow: hidden;
     padding: 20px;
+}
+.cart .item-detail-wrapper > div {
+    gap: 20px;
 }
 .cart .product-detail-image {
     height: 100%;
     object-fit: cover;
     width: -webkit-fill-available;
 }
+.cart .item-detail-content{
+    margin-top: 5px;
+}
 .cart .item-detail-cart-action {
     height: 100%;
     align-items: center;
+    margin-top: 5px;
     display: flex;
-    justify-content: center;
+}
+.cart .item-detail-wrapper > div{
+    height: 100%;
+}
+.cart .quantity-buttons {
+    display: flex;
 }
 /* .cart .row.align-items-start {
     height: 100%;
 } */
-.cart .item-detail-content{
+/* .cart .item-detail-content{
     display: flex;
     height: 100%;
     align-items: center;
-}
+} */
 .cart .item-detail-image {
     height: 100%;
 }
@@ -74,7 +90,8 @@ button.btn.btn-primary.cart-close-btn {
 
 .cart-detail-wrapper {
     position: relative;
-}
+    margin-bottom: 25px;
+}   
 div#modal-modal-description {
     position: relative;
 }
@@ -82,12 +99,23 @@ div#modal-modal-description {
     text-align: center;
     margin-bottom: 10px;
 }
-
-
-
+.cart .grand-total {
+   margin-top: 25px;
+}
+a.checkout.btn.btn-primary {
+    width: 100%;
+}
+.grand-total {
+    justify-content: center;
+}
 /* media quary */
-
+@media only screen and (max-width:250px){
+    
+}
 @media only screen and (max-width:450px) {
+    .cart .item-detail-wrapper > div {
+        gap: 0;
+    }
     .cart .item-detail-wrapper {
         height: auto;
         padding: 0;
@@ -100,13 +128,13 @@ div#modal-modal-description {
         align-items: center !important;
     }
     .cart h4.product-detail-title {
-        font-size: 13px;
+        font-size: 8px;
     }
     .cart .detail-price.mb-2.col-12 {
         justify-content: start;
     }
     .cart .edtail-page-price {
-        font-size: 20px;
+        font-size: 15px;
     }
     .cart .g-total-wrapper {
         margin: 10px 0;
@@ -116,8 +144,19 @@ div#modal-modal-description {
         display: flex;
         justify-content: center;
     }
-    .cart .grand-total-p {
-        font-size: 20px;
+    button.btn.btn-primary.curstom-add-to-cart-btnn {
+        font-size: 5px;
+    }
+    .cart .item-detail-image {
+        height: 72px;
+    }
+
+}
+@media only screen and (min-width: 1201px) and (max-width:1400px){
+    .grand-total {
+        position: unset;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media only screen and (min-width: 1201px){
@@ -129,12 +168,19 @@ div#modal-modal-description {
         overflow: hidden;
         padding: 20px;
     }
-    .grand-total {
-        position: absolute;
-        align-items: center;
-    }
     .cart .edtail-page-price {
         font-size: 22px;
+    }
+    .cart .item-detail-wrapper > div{
+        height: 300px;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .g-total-wrapper {
+        margin: 10px 0;
+    }
+    .grand-total-p {
+        font-size: 25px;
     }
 }
 @media only screen and (min-width:451px) and (max-width:576px){
@@ -145,6 +191,7 @@ div#modal-modal-description {
     .cart .grand-total {
         position: unset;
         justify-content: center;
+        padding: 15px 0;
     }
     .cart .row.align-items-start {
         align-items: center !important;
@@ -191,6 +238,9 @@ div#modal-modal-description {
     }
     .cart p.grand-total-p {
         font-size: 18px;
+    }
+    .g-total-wrapper {
+        margin: 10px 0;
     }
 }
 @media only screen and (min-width: 676px) and (max-width: 768px){
@@ -239,6 +289,9 @@ div#modal-modal-description {
         padding: 0 8px;
         font-size: 20px !important;
     }
+    .g-total-wrapper {
+        margin: 10px 0;
+    }
 }
 @media only screen and (min-width: 993px){
 }
@@ -277,6 +330,12 @@ div#modal-modal-description {
     }
     .cart a.checkout.btn.btn-primary {
         font-size: 15px;
+    }
+    .cart .g-total-wrapper {
+        margin: 10px 0;
+    }
+    .cart .quantity-buttons {
+        margin-bottom: 10px;
     }
 }
 /* @media only screen and (min-width: 1201px) and (max-width: 1400px){

@@ -21,7 +21,6 @@ import Backtotop from '../../Component/Common/backtotop/Backtotop'
 const HomePage = (props) => {
   const location = useLocation()
   const [activeTab, setActiveTab] = useState(`${location.pathname.slice(1)}`)
-  console.log(activeTab)
   const [detailsetdata, setSetdata] = useState([])
 
   const diningout = diningOut;

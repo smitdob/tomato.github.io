@@ -70,7 +70,7 @@ a.mid-footer-link:hover {
     object-fit: cover;
 }
 /* media query */
-@media only screen and (min-width: 300px) and (max-width:435px) {
+@media only screen and (max-width:435px) {
     h3.mid-footer-title {
         font-size: 13px;
     }
@@ -112,6 +112,14 @@ a.mid-footer-link:hover {
     }
     .fa-brands, .fab {
         font-size: 20px;
+    }
+    .top-footer {
+        justify-content: center;
+        margin-bottom: 21px;
+    }
+    .footer-logo {
+        height: 23px;
+        width: 80px;
     }
 }
 @media only screen and (min-width:436px){

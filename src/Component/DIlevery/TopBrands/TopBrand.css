@@ -29,13 +29,17 @@
 }
 
 
-@media only screen and (min-width: 300px) and (max-width:435px){
+@media only screen and (max-width:435px){
     .top-brand-cover {
         height: 40px;
         width: 40px;
     }
+    .top-brand-cover {
+        height: 30px;
+        width: 30px;
+    }
 }
-@media only screen and (min-width: 435px) and (max-width:576px){
+@media only screen and (min-width: 436px) and (max-width:576px){
     .top-brand-cover {
         height: 50px;
         width: 50px;
